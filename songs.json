@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Naatu Naatu",
+    "url": "naatu-naatu.html",
+    "movie": "RRR",
+    "year": 2022,
+    "singer": "Rahul Sipligunj, Kaala Bhairava"
+  },
+  {
+    "title": "Ram Siya Ram",
+    "url": "ram-siya-ram.html",
+    "movie": "Adipurush",
+    "year": 2023,
+    "singer": "Sachet–Parampara"
+  },
+  {
+    "title": "Oo Antava Oo Oo Antava",
+    "url": "oo-antava.html",
+    "movie": "Pushpa",
+    "year": 2021,
+    "singer": "Indravathi Chauhan"
+  }
+]
