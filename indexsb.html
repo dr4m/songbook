@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SongBook - Telugu Lyrics</title>
+  <link rel="stylesheet" href="sbstyles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">SongBook</div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="nav-menu">
+      <a href="#">Home</a>
+      <a href="#">Trending</a>
+      <a href="#">Categories</a>
+      <a href="#">Contact</a>
+    </nav>
+     </header>
+     
+     
+     <!-- search box here -->
+     <div class="search-container">
+     <input type="text" placeholder="Search songs or lyrics..." />
+     </div>
+
+  <section class="hero">
+    <h1>Telugu Lyrics Hub</h1>
+    <p>Explore lyrics of your favorite Telugu songs!</p>
+  </section>
+
+<br>
+  <!-- Language Swipe Section -->
+  <section>
+    <h4 style="text-align:center;">Explore Lyrics by Language</h4>
+    <div class="lang-carousel" id="langCarousel">
+      <div class="lang-card"><h3>Telugu</h3></div>
+      <div class="lang-card"><h3>Hindi</h3></div>
+      <div class="lang-card"><h3>Tamil</h3></div>
+      <div class="lang-card"><h3>Kannada</h3></div>
+      <div class="lang-card"><h3>Malayalam</h3></div>
+    </div>
+    <div class="lang-indicators" id="langIndicators">
+      <span class="active"></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </section>
+  
+  <br>
+  <br>
+
+  <section class="song-grid">
+    <div class="song-card">
+      <img src="samajavaragamana.jpg" alt="Song Cover" />
+      <h3>Samajavaragamana</h3>
+      <p>Ala Vaikunthapurramuloo</p>
+      <a href="samajavaragamana.html">View Lyrics</a>
+    </div>
+
+    <div class="song-card">
+      <img src="cover2.jpg" alt="Song Cover" />
+      <h3>Butta Bomma</h3>
+      <p>Ala Vaikunthapurramuloo</p>
+      <a href="buttabomma.html">View Lyrics</a>
+    </div>
+  </section>
+  
+  <br>
+  
+  <section>
+  <h3>Best of 90s</h3>
+  </section>
+  
+  
+  
+  
+  
+  
+  
+  <br>
+  <br>
+
+  <footer>
+    <p>&copy; 2025 SongBook by HackEr404</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("nav-menu");
+      menu.classList.toggle("show");
+    }
+
+    document.addEventListener("click", function(event) {
+      const navMenu = document.getElementById("nav-menu");
+      const toggleBtn = document.querySelector(".menu-toggle");
+      if (!navMenu.contains(event.target) && !toggleBtn.contains(event.target)) {
+        navMenu.classList.remove("show");
+      }
+    });
+
+    // Carousel scroll tracking
+    const carousel = document.getElementById("langCarousel");
+    const indicators = document.querySelectorAll("#langIndicators span");
+
+    carousel.addEventListener("scroll", () => {
+      const index = Math.round(carousel.scrollLeft / (carousel.scrollWidth / 5));
+      indicators.forEach((dot, i) => {
+        dot.classList.toggle("active", i === index);
+      });
+    });
+  </script>
+
+</body>
+</html>   rs.forEach((dot, i) => {
+        dot.classList.toggle("active", i === index);
+      });
+    });
+  </script>
+
+</body>
+</html>);
+  </script>
+
+</body>
+</html>addEventListener("click", function(event) {
+      const navMenu = document.getElementById("nav-menu");
+      const toggleBtn = document.querySelector(".menu-toggle");
+      if (!navMenu.contains(event.target) && !toggleBtn.contains(event.target)) {
+        navMenu.classList.remove("show");
+      }
+    });
+
+    // Carousel scroll tracking
+    const carousel = document.getElementById("langCarousel");
+    const indicators = document.querySelectorAll("#langIndicators span");
+
+    carousel.addEventListener("scroll", () => {
+      const index = Math.round(carousel.scrollLeft / (carousel.scrollWidth / 5));
+      indicators.forEach((dot, i) => {
+        dot.classList.toggle("active", i === index);
+      });
+    });
+  </script>
+
+</body>
+</html>="${t.url}">${t.title}</a>`;
+          resultsContainer.appendChild(li);
+        });
+      } else {
+        resultsContainer.style.display = 'block';
+        resultsContainer.innerHTML = '<li>No results found</li>';
+      }
+    }
+  </script></body>
+</html>t">
+      <div class="song">Perfect - Ed Sheeran</div>
+      <div class="song">Kurchi Madathapetti - Waltair Veerayya</div>
+      <div class="song">Arabic Kuthu - Beast</div>
+    </div>
+  </div>
+
+  <footer>
+    Follow on Instagram: <a href="https://instagram.com/pollution_beats_" target="_blank">@pollution_beats_</a><br>
+    © 2025 SONGBOOK by HackEr404. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("dropdownMenu");
+      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    }
+
+    function filterSongs() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const songs = document.querySelectorAll('#songList .song');
+      songs.forEach(song => {
+        const text = song.textContent.toLowerCase();
+        song.style.display = text.includes(input) ? '' : 'none';
+      });
+    }
+
+    function scrollToCategory(id) {
+      const el = document.getElementById(id);
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
