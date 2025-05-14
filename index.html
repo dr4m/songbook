@@ -179,8 +179,9 @@
 
     const filtered = songsData.filter(song =>
       song.title.toLowerCase().includes(query) ||
-      song.artist.toLowerCase().includes(query) ||
-      song.language.toLowerCase().includes(query)
+      (song.singer && song.singer.toLowerCase().includes(query)) ||
+      (song.movie && song.movie.toLowerCase().includes(query)) ||
+      (song.language && song.language.toLowerCase().includes(query))
     );
 
     if (filtered.length === 0) {
@@ -188,7 +189,7 @@
     } else {
       filtered.slice(0, 10).forEach(song => {
         const div = document.createElement("div");
-        div.textContent = `${song.title} - ${song.artist}`;
+        div.textContent = `${song.title} - ${song.singer || "Unknown Singer"}`;
         div.onclick = () => window.location.href = song.url;
         searchResults.appendChild(div);
       });
