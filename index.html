@@ -6,41 +6,44 @@
   <title>SongBook - Telugu Lyrics</title>
   <link rel="stylesheet" href="sbstyles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  <style>
+<style>
   .search-container {
-    position: relative;
-    max-width: 500px;
-    margin: 20px auto;
-  }
+  text-align: center;
+  margin: 20px;
+  position: relative;
+}
 
-  .search-container input {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-  }
+#searchInput {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
 
-  .search-results {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: white;
-    border: 1px solid #ccc;
-    z-index: 1000;
-    max-height: 200px;
-    overflow-y: auto;
-    display: none;
-  }
+.search-results {
+  position: absolute;
+  width: 80%;
+  max-width: 400px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  z-index: 10;
+  display: none;
+}
 
-  .search-results div {
-    padding: 10px;
-    cursor: pointer;
-  }
+.search-results div {
+  padding: 10px;
+  cursor: pointer;
+}
 
-  .search-results div:hover {
-    background-color: #f2f2f2;
-  }
-  </style>
+.search-results div:hover {
+  background: #f0f0f0;
+}
+</style>
 </head>
 <body>
 
@@ -58,8 +61,8 @@
      
      <!-- search box here -->
      <div class="search-container">
-  <input type="text" id="searchInput" placeholder="Search songs or lyrics..." autocomplete="off" />
-  <div class="search-results" id="searchResults"></div>
+  <input type="text" id="searchInput" placeholder="Search songs or lyrics..." />
+  <div id="searchResults" class="search-results"></div>
      </div>
 
   <section class="hero">
