@@ -1,37 +1,13 @@
 [
-  {
-    "title": "Naatu Naatu",
-    "url": "naatu-naatu.html",
-    "movie": "RRR",
-    "language": "Hindi",
-    "year": 2022,
-    "singer": "Rahul Sipligunj, Kaala Bhairava"
-  },
-  
-  {
-    "title": "Ram Siya Ram",
-    "url": "ram-siya-ram.html",
-    "movie": "Adipurush",
-    "year": 2023,
-    "singer": "Sachet–Parampara"
-  },
-  
-  {
-    "title": "Oo Antava Oo Oo Antava",
-    "url": "oo-antava.html",
-    "movie": "Pushpa",
-    "year": 2021,
-    "singer": "Indravathi Chauhan"
-  },
-
-  {
+{
   "title": "Butta Bomma",
   "singer": "Armaan Malik",
   "music": "Thaman S",
   "movie": "Ala Vaikunthapurramuloo",
-  "link": "/telugu/buttabomma.html",
+  "link": "../telugu/buttabomma.html",
   "year": "2020",
   "language": "Telugu",
-  "genre": "Romantic"
-  }
+  "genre": "Love"
+  "cover": "../Pic/buttabomma.jpg"
+}
 ]
