@@ -53,29 +53,26 @@
   <script>
   
   fetch("../songs/telugu.json")
-  .then(res => res.json())
-  .then(data => {
+.then(res => res.json())
+.then(data => {
   const loveContainer = document.getElementById("loveSongs");
   const massContainer = document.getElementById("massSongs");
   const devotionalContainer = document.getElementById("devotionalSongs");
-  
+
   data.forEach(song => {
-  if (song.language === "Telugu") {
-  const card = `
-  <div class="song-card">
-  <img src="${song.cover}" alt="Song Cover" />
-  <h3>${song.title}</h3>
-  <p>${song.movie}</p>
-  <a href="${song.url}">View Lyrics</a>
-  </div>`;
-  
-  if (song.category === "Love") loveContainer.innerHTML += card;
-  else if (song.category === "Mass") massContainer.innerHTML += card;
-  else if (song.category === "Devotional") devotionalContainer.innerHTML += card;
-  }
+    const card = `
+      <div class="song-card">
+        <img src="${song.cover}" alt="Song Cover" />
+        <h3>${song.title}</h3>
+        <p>${song.movie}</p>
+        <a href="${song.url}">View Lyrics</a>
+      </div>`;
+
+    if (song.category === "Love") loveContainer.innerHTML += card;
+    else if (song.category === "Mass") massContainer.innerHTML += card;
+    else if (song.category === "Devotional") devotionalContainer.innerHTML += card;
   });
-  });
-  
+});
   </script>
 
 
