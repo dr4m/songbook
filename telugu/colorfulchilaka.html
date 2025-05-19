@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SongBook - Telugu Lyrics</title>
+  <link rel="stylesheet" href="sbstyles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+
+   <style>
+   .lyrics-container {
+   max-width: 600px;
+   margin: auto;
+   text-align: center;
+   }
+   .lyrics-container img {
+   width: 100%;
+   max-width: 300px;
+   border-radius: 10px;
+   }
+   .lyrics-container h1 {
+   margin-top: 20px;
+   color: #00ffd5;
+   }
+   .lyrics-container pre {
+   text-align: left;
+   white-space: pre-wrap;
+   margin-top: 20px;
+   background: #1f1f1f;
+   padding: 15px;
+   border-radius: 8px;
+   }
+   </style>
+
+
+</head>
+<body>
+
+  <header>
+    <div class="logo">SongBook</div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="nav-menu">
+      <a href="#">Home</a>
+      <a href="#">Trending</a>
+      <a href="#">Categories</a>
+      <a href="#">Contact</a>
+    </nav>
+     </header>
+     
+     
+     <!-- search box here -->
+     <div class="search-container">
+     <input type="text" placeholder="Search songs or lyrics..." />
+     </div>
+
+  <section class="hero">
+    <h1>Telugu Lyrics Hub</h1>
+    <p>Explore lyrics of your favorite Telugu songs!</p>
+  </section>
+
+<br>
+
+<div class="lyrics-container">
+  <img src="buttabomma.jpg" alt="Butta Bomma" />
+  <h1>Butta Bomma</h1>
+  <p><strong>Movie:</strong> Ala Vaikunthapurramuloo</p>
+  <p><strong>Singers:</strong> Armaan Malik</p>
+
+
+<br>
+<br>
+<!-- Toggle Switch Button -->
+<button id="langToggleBtn" onclick="toggleLyrics()">Show English Lyrics</button>
+
+
+<!-- English Lyrics -->
+<pre id="lyrics-english" style="text-align:center;">
+hey.. Kaatukettina Kallani justhe
+
+kite-u laga egirenu manase
+
+ayya baboi inthandhamga yetta puttave
+
+chethi gaajulu savvadi chesthe
+
+chepa laaga thullenu vayase
+
+thassadhiyya gundellona mante pettave
+
+Arey colorfullu chilaka
+
+needhe colorfullu nadaka
+
+oh color soda koduthu
+
+neetho colour photo dhigutha 
+
+Rs 1 Trial
+neetho colour photo dhigutha
+
+Andaala monalisa
+
+aa painting-u nenu chusa
+
+arey aa soyagam nee mundhara
+
+ye moolakosthadhe
+
+Bhoogolam antha thiriga
+
+arey google lo motham vethika
+
+inni chamakkulu thalukkulu
+
+nenaithe chudledhe
+
+paala punthaki pranam vasthe
+
+pala pittaki parikini vesthe
+
+jabilamme jaatharakosthe neela vuntundhe
+
+Arey colorfullu chilaka
+
+needhe colorfullu nadaka
+
+oh color soda koduthu
+
+neetho colour photo dhigutha 
+
+neetho colour photo dhigutha 
+
+nuvvemo chala great-u
+
+nee chirunavvukedithe rate-u
+
+arey baahubali booking-u la kottesukuntare
+
+nuvvugani pedthe party
+
+arey neekinka undadhu poti
+
+nee sogassuke dhaasohamai
+
+jejelu kodathare
+
+newton emo malli pudithe
+
+intha andham kantlo padithe
+
+bhoomikanna minchina gravity
+
+neeke antade
+
+Arey colorfullu chilaka
+
+needhe colorfullu nadaka
+
+oh color soda koduthu
+
+neetho colour photo dhigutha
+
+neetho colour photo dhigutha
+  </pre>
+  
+  <!-- Toggle Script -->
+  <script>
+  let isTelugu = true;
+  
+  function toggleLyrics() {
+  isTelugu = !isTelugu;
+  
+  document.getElementById("lyrics-telugu").style.display = isTelugu ? "block" : "none";
+  document.getElementById("lyrics-english").style.display = isTelugu ? "none" : "block";
+  
+  document.getElementById("langToggleBtn").textContent = isTelugu ? "Show English Lyrics" : "Show Telugu Lyrics";
+  }
+  </script>
+  
+  
+
+  <br><br><br>
+  
+  
+  <!-- Back to Telugu Songs Button -->
+  <div style="text-align: center; margin: 40px 0;">
+  <a href="telugu.html" class="back-button">Back to Telugu Songs</a>
+  </div>
+  
+  <br>
+
+
+
+<!-- Top Telugu Songs Dark Section -->
+<section style="background-color: #111; color: #fff; padding: 20px 15px; border-radius: 12px; margin-top: 30px;">
+  <h2 style="font-size: 24px; margin-bottom: 15px; border-bottom: 2px solid #333; padding-bottom: 8px;">Top Telugu Songs</h2>
+  <ul style="list-style: none; padding-left: 0;">
+    <li style="margin: 10px 0;"><a href="samajavaragamana.html" style="color: #00ffe1; text-decoration: none;">Samajavaragamana - Sid Sriram</a></li>
+    <li style="margin: 10px 0;"><a href="ramuloo.html" style="color: #00ffe1; text-decoration: none;">Ramuloo Ramulaa - Anurag Kulkarni</a></li>
+    <li style="margin: 10px 0;"><a href="sitarakala.html" style="color: #00ffe1; text-decoration: none;">Sitarala Sirapadu - Shankar Mahadevan</a></li>
+    <li style="margin: 10px 0;"><a href="mindblock.html" style="color: #00ffe1; text-decoration: none;">Mind Block - Blaaze, Ranina Reddy</a></li>
+    <li style="margin: 10px 0;"><a href="heybaby.html" style="color: #00ffe1; text-decoration: none;">Hey Baby - DSP</a></li>
+  </ul>
+</section>
+
+<br><br>
+
+</div>
+
+
+<section id="artists" class="artist-section">
+  <h2>Top Artists</h2>
+  <br>
+  <div class="artist-scroll">
+  <div class="artist-card" onclick="location.href='artist-sachet-parampara.html'">
+  <img src="buttabomma.jpg" alt="Sachet–Parampara" />
+  <p>Sachet–Parampara</p>
+  </div>
+  
+  <div class="artist-card" onclick="location.href='artist-sachet-parampara.html'">
+  <img src="buttabomma.jpg" alt="Sachet–Parampara" />
+  <p>Sachet–Parampara</p>
+  </div>
+  <!-- Add more artist cards here -->
+  </div>
+  </section>
+  
+  
+  <!-- Social Media Section -->
+  <section class="social-media">
+  <h3>Follow Us</h3>
+  <div class="social-icons">
+  <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+  <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+  </div>
+  </section>
+  
+  <br>
+  
+  
+  
+  <footer>
+  <p>&copy; 2025 SongBook by HackEr404</p>
+  </footer>
+  
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("nav-menu");
+  menu.classList.toggle("show");
+}
+
+document.addEventListener("click", function(event) {
+  const navMenu = document.getElementById("nav-menu");
+  const toggleBtn = document.querySelector(".menu-toggle");
+  if (!navMenu.contains(event.target) && !toggleBtn.contains(event.target)) {
+    navMenu.classList.remove("show");
+  }
+});
+</script>
+  
+ 
+
+</body>
+</html>show");
+  }
+});
+</script>
+  
+ 
+
+</body>
+</html>
