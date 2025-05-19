@@ -9,5 +9,17 @@
   "language": "Telugu",
   "genre": "Love"
   "cover": "../Pic/buttabomma.jpg"
-}
+},
+
+  {
+  "title": "Colorful chilaka",
+  "singer": "Narendra",
+  "music": "Thaman s",
+  "movie": "Express Raja",
+  "link": "../telugu/colorfulchilaka.html",
+  "year": "2016",
+  "language": "Telugu",
+  "genre": "mass"
+  "cover": "../Pic/buttabomma.jpg"
+  }
 ]
