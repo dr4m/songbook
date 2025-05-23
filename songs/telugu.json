@@ -12,6 +12,18 @@
 },
 
   {
+  "title": "Samajavaragamana",
+  "singer": "Sid Sriram",
+  "music": "Thaman S",
+  "movie": "Ala Vaikunthapurramuloo",
+  "link": "../telugu/samajavaragamana.html",
+  "year": "2020",
+  "language": "Telugu",
+  "category": "Love",
+  "cover": "../pic/samajavaragamana.jpg"
+},
+
+  {
   "title": "Colorful chilaka",
   "singer": "Narendra",
   "music": "Thaman s",
