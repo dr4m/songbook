@@ -21,5 +21,18 @@
   "language": "Telugu",
   "category": "Mass",
   "cover": "../pic/Colorfulchilaka.jpg"
+  },
+
+  {
+  "title": "Asura Hananam",
+  "singer": "M. M. Keeravaani",
+  "music": "M. M. Keeravaani",
+  "movie": "Hari Hara Veera Mallu",
+  "link": "../telugu/asurahananam.html",
+  "year": "2025",
+  "language": "Telugu",
+  "category": "Devotional",
+  "cover": "../pic/asaruhananam.jpg"
   }
+  
 ]
