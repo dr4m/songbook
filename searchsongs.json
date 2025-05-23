@@ -11,6 +11,30 @@
   "cover": "../Pic/buttabomma.jpg"
 },
 
+    {
+  "title": "Asura Hananam",
+  "singer": "M. M. Keeravaani",
+  "music": "M. M. Keeravaani",
+  "movie": "Hari Hara Veera Mallu",
+  "link": "../telugu/asurahananam.html",
+  "year": "2025",
+  "language": "Telugu",
+  "category": "Devotional",
+  "cover": "../pic/asurahananam.jpg"
+    },
+
+  {
+  "title": "Samajavaragamana",
+  "singer": "Sid Sriram",
+  "music": "Thaman S",
+  "movie": "Ala Vaikunthapurramuloo",
+  "link": "../telugu/samajavaragamana.html",
+  "year": "2020",
+  "language": "Telugu",
+  "category": "Love",
+  "cover": "../pic/Samajavaragamana.jpg"
+},
+
   {
   "title": "Colorful chilaka",
   "singer": "Narendra",
