@@ -7,7 +7,7 @@
       "year": "2020",
       "language": "English",
       "image": "pic/party4u.jpg",
-      "link": "party4u.html",
+      "link": "../english/party4u.html",
       "tags": ["Charli XCX", "Party 4 U", "How I'm Feeling Now", "English", "Pop"]
     }
     // Add other songs here...
