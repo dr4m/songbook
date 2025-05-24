@@ -103,6 +103,8 @@ fetch("../songs/english.json")
     const hiphopContainer = document.getElementById("hiphopsongs");
     const emelodyContainer = document.getElementById("emelodysongs");
 
+    let popCount = 0, hiphopCount = 0, melodyCount = 0;
+
     data.forEach(song => {
       const card = `
         <div class="song-card">
@@ -112,9 +114,16 @@ fetch("../songs/english.json")
           <a href="${song.link}">View Lyrics</a>
         </div>`;
 
-      if (song.category === "Pop") popContainer.innerHTML += card;
-      else if (song.category === "HipHop") hiphopContainer.innerHTML += card;
-      else if (song.category === "Melody") emelodyContainer.innerHTML += card;
+      if (song.category === "Pop" && popCount < 4) {
+        popContainer.innerHTML += card;
+        popCount++;
+      } else if (song.category === "HipHop" && hiphopCount < 4) {
+        hiphopContainer.innerHTML += card;
+        hiphopCount++;
+      } else if (song.category === "Melody" && melodyCount < 4) {
+        emelodyContainer.innerHTML += card;
+        melodyCount++;
+      }
     });
   });
 </script>
