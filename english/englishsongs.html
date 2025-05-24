@@ -127,31 +127,7 @@ fetch("../songs/english.json")
 <br>
 
    <!-- Back to Telugu Songs Button -->
-  <script>
-fetch("../songs/english.json")
-  .then(res => res.json())
-  .then(data => {
-    const popContainer = document.getElementById("popsongs");
-    const hiphopContainer = document.getElementById("hiphopsongs");
-    const emelodyContainer = document.getElementById("emelodysongs");
-
-    data.forEach(song => {
-      const card = `
-        <div class="song-card">
-          <img src="${song.cover}" alt="Song Cover" />
-          <h3>${song.title}</h3>
-          <p>${song.movie}</p>
-          <a href="${song.link}">View Lyrics</a>
-        </div>`;
-
-      if (song.category === "Pop") popContainer.innerHTML += card;
-      else if (song.category === "HipHop") hiphopContainer.innerHTML += card;
-      else if (song.category === "Melody") emelodyContainer.innerHTML += card;
-    });
-  });
-  </script>v style="text-align: center; margin: 40px 0;">
-  <a href="../index.html" class="back-button">Back to Home Page</a>
-  </div>
+  <p style="text-align:center;"><a href="../index.html" style="color:#00ffd5;">Back to Home</a></p>
 
   
   <br>
