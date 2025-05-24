@@ -99,9 +99,9 @@
   fetch("../songs/english.json")
 .then(res => res.json())
 .then(data => {
-  const loveContainer = document.getElementById("popsongs");
-  const massContainer = document.getElementById("hiphopsongs");
-  const devotionalContainer = document.getElementById("emelodyongs");
+  const popContainer = document.getElementById("popsongs");
+  const hiphopContainer = document.getElementById("hiphopsongs");
+  const emelodyContainer = document.getElementById("emelodyongs");
 
   data.forEach(song => {
     const card = `
