@@ -236,7 +236,7 @@
       filtered.slice(0, 10).forEach(song => {
         const div = document.createElement("div");
         div.textContent = `${song.title} - ${song.singer || "Unknown Singer"}`;
-        div.onclick = () => window.location.href = song.url;
+        div.onclick = () => window.location.href = song.link;
         searchResults.appendChild(div);
       });
     }
