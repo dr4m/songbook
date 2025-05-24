@@ -29,6 +29,29 @@ header {
 .logo {
   font-size: 24px;
   font-weight: 600;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo a {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Poppins', Sans-Serif;
+  font-size: 25px;
+}
+
+.white-txt {
+  color: white;
+}
+
+
+
+.green-txt {
+  color: #0fc40c;
+}
+
+#cate-title {
+  padding-left: 20px ;
 }
 
 .menu-toggle {
