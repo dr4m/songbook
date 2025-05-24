@@ -1,10 +1,15 @@
-[
-  {
-    "title": "Party 4 U",
-    "album": "Charli XCX Unreleased",
-    "cover": "../pic/party4u.jpg",
-    "link": "../english/party4u.html",
-    "category": "PoP"
-  }
-
-]
+{
+  "songs": [
+    {
+      "title": "Party 4 U",
+      "artist": "Charli XCX",
+      "album": "How I'm Feeling Now",
+      "year": "2020",
+      "language": "English",
+      "image": "pic/party4u.jpg",
+      "link": "party4u.html",
+      "tags": ["Charli XCX", "Party 4 U", "How I'm Feeling Now", "English", "Pop"]
+    }
+    // Add other songs here...
+  ]
+}
