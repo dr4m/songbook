@@ -97,6 +97,14 @@
     "actor": "ntr",
   "cover": "../pic/chuttamalle.jpg"
 },
+
+  {
+    "title": "Ordinary",
+    "movie": "Alex Warren",
+    "category": "Pop",
+    "link": "../english/ordinary.html",
+    "cover": "../pic/ordinaryalex.jpg"
+  },
   
   {
     "title": "cry for me",
