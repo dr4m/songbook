@@ -1,4 +1,17 @@
 [
+  {
+  "title": "Thanu",
+    "actor": "nani",
+  "singer": "Anirudh Ravichander, Raghav and Mickey J",
+  "music": "Anirudh Ravichander",
+  "movie": "hit 3",
+  "link": "../telugu/thanuhit3.html",
+  "year": "2025",
+  "language": "Telugu",
+  "category": "Love",
+  "cover": "../pic/thanuhit3.jpg"
+},
+  
 {
   "title": "Butta Bomma",
   "actor": "allu arjun",
