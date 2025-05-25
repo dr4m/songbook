@@ -5,5 +5,14 @@
     "category": "Pop",
     "link": "../english/party4u.html",
     "cover": "../pic/party4u.jpg"
+  },
+
+  {
+    "title": "cry for me",
+    "movie": "The Weeknd",
+    "category": "Pop",
+    "link": "../english/cry4me.html",
+    "cover": "../pic/cry4me.jpg"
   }
+  
 ]
