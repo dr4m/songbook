@@ -72,11 +72,12 @@
   </div>
 </div>
 
-<script>
+
+     <script>
   fetch("../searchsongs.json")
     .then(res => res.json())
     .then(data => {
-      const filtered = data.filter(song => song.singer && song.singer.toLowerCase().includes("anirudh"));
+      const filtered = data.filter(song => song.actor && song.actor.toLowerCase().includes("pawan kalyan"));
       const container = document.getElementById("artistSongs");
 
       if (filtered.length === 0) {
@@ -97,7 +98,7 @@
         });
       }
     });
-</script>
+     </script>
 
  <!-- Back to Telugu Songs Button -->
  <div style="text-align: center; margin: 40px 0;">
