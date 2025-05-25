@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZXYSW3PSS"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4ZXYSW3PSS');
+</script>
+     
+  <title>Ilaiyaraaja The profolic composer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+    <meta name="description" content="Ilaiyaraaja Songs Lyrics - Telugu, Tamil & Hindi songs list with lyrics, albums and movie info.">
+<meta name="keywords" content="Ilaiyaraaja songs, Ilaiyaraaja lyrics, Telugu Ilaiyaraaja songs, Telugu songs, Ilaiyaraaja movie songs">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="../sbstyles.css" />
+
+</head>
+
+<body>
+
+  <header>
+       <div class="logo">
+          <a href="../index.html" style="text-decoration:none;"> 
+       <span class="white-txt">Song</span><span class="green-txt">Book</span></a>
+       </div>
+       <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+         <nav id="nav-menu">
+           <a href="../index.html">Home</a>
+           <a href="../trends/telugutrending.html">Trending</a>
+           <a href="../contact.ht">Contact</a>
+           <a href="#">About Me</a>
+     </nav>
+     </header>
+     
+<!-- search box here -->
+     <div class="search-container">
+  <input type="text" id="searchInput" placeholder="Search songs or lyrics..." />
+  <div id="searchResults" class="search-results"></div>
+     </div>
+     
+ <section class="hero">
+    <h1>Best Lyrics Hub</h1>
+    <br>
+    <p>Explore lyrics of your favorite songs!</p>
+  </section>
+  
+  <br>
+  
+  <div class="artist-profile">
+  <div class="artist-header" style="text-align:center; padding:20px;">
+    <img src="../pic/Ilaiyaraja.jpg" alt="Ilaiyaraja" style="width:150px;height:150px;border-radius:50%;box-shadow:0 0 10px #ccc;"> 
+    
+    <h2>Ilaiyaraaja</h2> <br>
+    <p>Music Director & Playback Singer</p>
+    <p>Languages: Telugu, Tamil, Hindi</p>
+  </div>
+
+  <div class="artist-songs">
+    <h3 style="text-align:center;">Songs by Ilaiyaraaja </h3> <br>
+    <div id="artistSongs" style="display:flex;flex-wrap:wrap;gap:15px;justify-content:center;"></div>
+  </div>
+</div>
+
+<script>
+  fetch("../searchsongs.json")
+    .then(res => res.json())
+    .then(data => {
+      const filtered = data.filter(song => song.singer && song.singer.toLowerCase().includes("Ilaiyaraaja"));
+      const container = document.getElementById("artistSongs");
+
+      if (filtered.length === 0) {
+        container.innerHTML = "<p>No songs found.</p>";
+      } else {
+        filtered.forEach(song => {
+          const div = document.createElement("div");
+          div.style.width = "160px";
+          div.style.textAlign = "center";
+          div.innerHTML = `
+            <a href="${song.link}" style="text-decoration:none;color:#888;">
+              <img src="${song.cover}" alt="${song.title}" style="width:100%;border-radius:10px;">
+              <p style="margin-top:5px;font-weight:bold;">${song.title}</p>
+              <small>${song.movie}</small>
+            </a>
+          `;
+          container.appendChild(div);
+        });
+      }
+    });
+</script>
+
+ <!-- Back to Telugu Songs Button -->
+ <div style="text-align: center; margin: 40px 0;">
+ <a href="telugu.html" class="back-button">Back to Telugu Songs</a>
+ </div>
+ 
+ <br>
+
+
+ <!-- Social Media Section -->
+ <section class="social-media">
+ <h3>Follow Us</h3>
+ <div class="social-icons">
+ <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+ <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+ <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+ <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+ </div>
+ </section>
+ 
+ <br>
+ 
+  <footer>
+ <p>&copy; 2025 SongBook by HackEr404</p>
+ </footer>
+ 
+<script>
+function toggleMenu() {
+ const menu = document.getElementById("nav-menu");
+ menu.classList.toggle("show");
+}
+
+document.addEventListener("click", function(event) {
+ const navMenu = document.getElementById("nav-menu");
+ const toggleBtn = document.querySelector(".menu-toggle");
+ if (!navMenu.contains(event.target) && !toggleBtn.contains(event.target)) {
+   navMenu.classList.remove("show");
+ }
+});
+</script>
+ 
+ 
+</body>
+</html>
