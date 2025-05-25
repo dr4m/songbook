@@ -65,5 +65,13 @@
   "language": "Telugu",
   "genre": "Mass",
   "cover": "../Pic/colorfulchilaka.jpg"
+  },
+  
+  {
+    "title": "cry for me",
+    "movie": "The Weeknd",
+    "category": "Pop",
+    "link": "../english/cry4me.html",
+    "cover": "../pic/cry4me.jpg"
   }
 ]
