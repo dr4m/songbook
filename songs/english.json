@@ -1,5 +1,13 @@
 [
   {
+    "title": "Ordinary",
+    "movie": "Alex Warren",
+    "category": "Pop",
+    "link": "../english/ordinary.html",
+    "cover": "../pic/ordinaryalex.jpg"
+  },
+  
+  {
     "title": "party 4 u",
     "movie": "charlie xcx",
     "category": "Pop",
