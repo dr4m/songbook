@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://songbook.hacker404.site/sitemap.xml
