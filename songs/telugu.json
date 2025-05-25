@@ -11,6 +11,19 @@
   "category": "Love",
   "cover": "../pic/hridayamlopala.jpg"
 },
+
+  {
+  "title": "Chuttamalle",
+  "singer": "Anirudh Ravichander",
+  "music": "Anirudh Ravichander",
+  "movie": "Devara Part 1",
+  "link": "../telugu/chuttamalle.html",
+  "year": "2024",
+  "language": "Telugu",
+  "category": "Love",
+  "cover": "../pic/chuttamalle.jpg"
+},
+  
   
   {
   "title": "Padi Padi Leche Manasu",
