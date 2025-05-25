@@ -57,28 +57,28 @@
 
 
 <h2 style="text-align:center;">Trending Telugu Songs - 2025</h2>
-<div id="trendingContainer" style="display:flex;flex-wrap:wrap;gap:15px;justify-content:center;"></div>
+<div id="trendingSongs" style="display:flex;flex-wrap:wrap;gap:15px;justify-content:center;"></div>
 
 <script>
-  fetch("searchsongs.json")
+  fetch("../searchsongs.json")
     .then(res => res.json())
     .then(data => {
       const filtered = data.filter(song =>
-        song.language && song.language.toLowerCase() === "telugu" &&
-        song.year && song.year == 2025
+        song.language?.toLowerCase().trim() === "telugu" &&
+        song.year?.toString().trim() === "2025"
       );
 
-      const container = document.getElementById("trendingContainer");
+      const container = document.getElementById("trendingSongs");
 
       if (filtered.length === 0) {
-        container.innerHTML = "<p>No trending songs found.</p>";
+        container.innerHTML = "<p>No songs found.</p>";
       } else {
         filtered.forEach(song => {
           const div = document.createElement("div");
           div.style.width = "160px";
           div.style.textAlign = "center";
           div.innerHTML = `
-            <a href="${song.link}" style="text-decoration:none;color:#444;">
+            <a href="${song.link}" style="text-decoration:none;color:#888;">
               <img src="${song.cover}" alt="${song.title}" style="width:100%;border-radius:10px;">
               <p style="margin-top:5px;font-weight:bold;">${song.title}</p>
               <small>${song.movie}</small>
