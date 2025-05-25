@@ -1,6 +1,7 @@
 [
 {
   "title": "Butta Bomma",
+  "actor": "allu arjun",
   "singer": "Armaan Malik",
   "music": "Thaman S",
   "movie": "Ala Vaikunthapurramuloo",
@@ -13,6 +14,7 @@
 
     {
   "title": "Asura Hananam",
+      "actor": "pawan kalyan",
   "singer": "M. M. Keeravaani",
   "music": "M. M. Keeravaani",
   "movie": "Hari Hara Veera Mallu",
@@ -26,6 +28,7 @@
   {
   "title": "Samajavaragamana",
   "singer": "Sid Sriram",
+    "actor": "allu arjun",
   "music": "Thaman S",
   "movie": "Ala Vaikunthapurramuloo",
   "link": "../telugu/samajavaragamana.html",
@@ -37,6 +40,7 @@
 
   {
   "title": "Hridayam Lopala",
+    "actor": "vijay devarakonda",
   "singer": "Anirudh Ravichander, Anumita Nadesan",
   "music": "Anirudh Ravichander",
   "movie": "Kingdom",
@@ -64,6 +68,7 @@
   "year": "2016",
   "language": "Telugu",
   "genre": "Mass",
+   "actor": "sharwanand",
   "cover": "../Pic/colorfulchilaka.jpg"
   },
 
@@ -76,6 +81,7 @@
   "year": "2024",
   "language": "Telugu",
   "category": "Love",
+    "actor": "ntr",
   "cover": "../pic/chuttamalle.jpg"
 },
   
