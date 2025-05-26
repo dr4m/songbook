@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - Mr. Pollution | SongBook</title>
+  <meta name="description" content="Know more about Mr. Pollution, the creator of SongBook. Learn about his passion for music and the story behind the Hacker404 project." />
+  <meta name="keywords" content="Mr. Pollution, SongBook, Hacker404, about, music lover, brand promotions, ads" />
+  <link rel="stylesheet" href="sbstyles.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: #fff;
+      padding: px;
+      line-height: 1.6;
+    }
+    
+    .b1 {
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #fff;
+      margin-top: 30px;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 15px;
+      border-top: 1px solid #333;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  
+  <header>
+       <div class="logo">
+          <a href="../index.html" style="text-decoration:none;"> 
+       <span class="white-txt">Song</span><span class="green-txt">Book</span></a>
+       </div>
+       <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+         <nav id="nav-menu">
+           <a href="../index.html">Home</a>
+           <a href="#">Trending</a>
+           <a href="../artists/artists.html">Artists</a>
+           <a href="../contact.html">Contact</a>
+     </nav>
+     </header>
+<div class=b1 >
+  <div class="container">
+    <h1>About Me</h1>
+    <p>Hey! I'm <strong>Mr. Pollution</strong>, the soul behind the <strong>SongBook</strong> project hosted on <strong>Hacker404.site</strong>.</p>
+
+    <section>
+      <h2><i class="fas fa-music"></i> My Passion for Music</h2>
+      <p>Music is more than just sound to me — it's emotion, energy, and expression. From lyrical beauty to heart-touching melodies, I’ve always been obsessed with the magic music creates in our lives.</p>
+    </section>
+    
+    <section>
+  <h2><i class="fas fa-seedling"></i> How We Started SongBook</h2>
+  <p>
+    SongBook began as a small idea rooted in my deep love for music. While working on <strong>Hacker404.site</strong> for cybersecurity learning, I felt something was missing — a place to celebrate the music I love. That’s when I decided to blend my tech skills with my passion and create SongBook.
+  </p>
+  <p>
+    What started as a simple lyrics page slowly grew into a full space for music lovers. From jotting down favorite lyrics to curating artist tributes, SongBook became my way of expressing the soul behind the sound.
+  </p>
+</section>
+
+    <section>
+      <h2><i class="fas fa-code"></i> About Hacker404.site</h2>
+      <p><strong>Hacker404</strong> started as a cyber learning and ethical hacking website. But with my love for music, I launched <strong>SongBook</strong>, a space where lyrics, trends, and artist tributes come together in a clean, simple layout that anyone can enjoy.</p>
+    </section>
+    
+    <section>
+      <h2><i class="fas fa-ad"></i> Why You See Ads</h2>
+      <p>To keep this site alive and growing, we display a few minimal ads. These help cover hosting and maintenance costs without disturbing your experience. We promise not to overload you — just enough to support what we love doing!</p>
+    </section>
+
+    <section>
+      <h2><i class="fas fa-handshake"></i> Contact for Brand Collaborations</h2>
+      <p>If you're looking to promote your music-related products, apps, or services, feel free to reach out:</p>
+      <ul>
+        <li><i class="fab fa-instagram"></i> Instagram: <a href="https://instagram.com/hacker404.com_" target="_blank">@hacker404.com_</a></li>
+        <li><i class="fas fa-envelope"></i> Gmail: <a href="mailto:hacker404contact@gmail.com">hacker404contact@gmail.com</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><i class="fas fa-heart"></i> Thank You!</h2>
+      <p>Thanks for visiting <strong>SongBook</strong> and supporting my journey. Your love makes this possible. Keep vibing with music!</p>
+    </section>
+</div>
+
+
+ 
+    <footer>
+      <p><em>Signing off,</em><br><strong>Mr. Pollution</strong></p>
+    </footer>
+    
+  </div>
+  
+  
+<!-- Back to Telugu Songs Button -->
+ <div style="text-align: center; margin: 40px 0;">
+ <a href="../index.html" class="back-button">Back to Home Page</a>
+ </div>
+ 
+ <!-- Social Media Section -->
+ <section class="social-media">
+ <h3>Follow Us</h3>
+ <div class="social-icons">
+ <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+ <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+ <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+ <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+ </div>
+ </section>
+   
+  <footer>
+ <p>&copy; 2025 SongBook by Mr. Pollution</p>
+ </footer>
+ 
+<script>
+function toggleMenu() {
+ const menu = document.getElementById("nav-menu");
+ menu.classList.toggle("show");
+}
+
+document.addEventListener("click", function(event) {
+ const navMenu = document.getElementById("nav-menu");
+ const toggleBtn = document.querySelector(".menu-toggle");
+ if (!navMenu.contains(event.target) && !toggleBtn.contains(event.target)) {
+   navMenu.classList.remove("show");
+ }
+});
+</script>
+  
+
+</body>
+</html>
