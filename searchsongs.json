@@ -73,6 +73,16 @@
   },
 
   {
+    "title": "Ordinary",
+    "movie": "Alex Warren",
+    "category": "Pop",
+    "link": "../english/ordinary.html",
+    "year": "2024",
+    "language": "English",
+    "cover": "../pic/ordinary.jpg"
+  },
+
+  {
   "title": "Colorful chilaka",
   "singer": "Narendra",
   "music": "Thaman s",
