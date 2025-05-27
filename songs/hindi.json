@@ -1,11 +1,14 @@
+[
 {
-  "title": "Raanjnan",
-  "singer": "",
-  "music": "Anirudh Ravichander",
-  "movie": "Kingdom",
-  "link": "../telugu/hridayamlopala.html",
+  "title": "Raanjhan",
+  "singer": "Sachet Parampara, Parampara Tandon",
+  "music": "Sachet Parampara",
+  "movie": "Do Patti",
+  "link": "../hindi/raanjhan.html",
   "year": "2025",
-  "language": "Telugu",
+  "language": "Hindi",
   "category": "Love",
-  "cover": "../pic/hridayamlopala.jpg"
+  "cover": "../pic/raanjhan.jpg"
 },
+
+]
