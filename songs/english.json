@@ -1,5 +1,14 @@
 [
   {
+    "title": "Bad Dreams",
+    "movie": "Teddy Swims",
+    "category": "Pop",
+    "year": "2025",
+    "link": "../english/baddreams.html",
+    "cover": "../pic/baddreams.jpg"
+  },
+  
+  {
     "title": "Ordinary",
     "movie": "Alex Warren",
     "category": "Pop",
