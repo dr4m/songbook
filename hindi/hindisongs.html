@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZXYSW3PSS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZXYSW3PSS');
+</script>
+  
+  <meta charset="UTF-8">
+  <title>Hindi Songs - SongBook</title>
+  <link rel="stylesheet" href="../sbstyles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  
+<style>
+  
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo a {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Poppins', Sans-Serif;
+  font-size: 25px;
+}
+
+.white-txt {
+  color: white;
+}
+
+.green-txt {
+  color: #0fc40c;
+}
+
+#cate-title {
+  padding-left: 20px ;
+}
+</style>
+</head>
+
+
+<body>
+    <header>
+       <div class="logo">
+          <a href="../index.html" style="text-decoration:none;"> 
+       <span class="white-txt">Song</span><span class="green-txt">Book</span></a>
+       </div>
+       <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+         <nav id="nav-menu">
+           <a href="../index.html">Home</a>
+           <a href="../trends/telugutrending.html">Trending</a>
+           <a href="../artists/artists.html">Artists</a>
+           <a href="../contact.html">Contact</a>
+           <a href="../aboutme.html">About Me</a>
+     </nav>
+     </header>
+     
+<!-- search box here -->
+<div class="search-container">
+  <input type="text" id="searchInput" placeholder="Search songs or lyrics..." />
+  <div id="searchResults" class="search-results"></div>
+</div>
+
+  <section class="hero">
+    <h1>Hindi Lyrics Hub</h1>
+    <p>Explore lyrics of your favorite Hindi songs!</p>
+  </section>
+  <br><br>
+  
+  
+  <section id="love" class="category-section">
+  <h2 id="cate-title">Love Songs</h2>
+  <div class="song-grid" id="lovesongs"></div>
+  </section>
+  
+  <section id="melody" class="category-section">
+  <h2 id="cate-title">Melody Songs</h2>
+  <div class="song-grid" id="melodysongs"></div>
+  </section>
+  
+  <section id="devotional" class="category-section">
+  <h2 id="cate-title">Devotional Songs</h2>
+  <div class="song-grid" id="devotionalsongs"></div>
+  </section>
+  
+  
+<script>
+fetch("../songs/hindi.json")
+  .then(res => res.json())
+  .then(data => {
+    const loveContainer = document.getElementById("lovesongs");
+    const melodyContainer = document.getElementById("melodypsongs");
+    const devotionalContainer = document.getElementById("devotionalsongs");
+
+    let loveCount = 0, melodyCount = 0, devotionalCount = 0;
+
+    data.forEach(song => {
+      const card = `
+        <div class="song-card">
+          <img src="${song.cover}" alt="Song Cover" />
+          <h3>${song.title}</h3>
+          <p>${song.movie}</p>
+          <a href="${song.link}">View Lyrics</a>
+        </div>`;
+
+      if (song.category === "love" && loveCount < 4) {
+        loveContainer.innerHTML += card;
+        loveCount++;
+      } else if (song.category === "melodyHop" && melodyCount < 4) {
+        melodyContainer.innerHTML += card;
+        melodyCount++;
+      } else if (song.category === "devotional" && devotionalCount < 4) {
+        devotionalContainer.innerHTML += card;
+        devotionalCount++;
+      }
+    });
+  });
+</script>
+
+
+
+
+<br>
+<br>
+<br>
+
+   <!-- Back to Telugu Songs Button -->
+
+  <div style="text-align: center; margin: 40px 0;">
+  <a href="../index.html" class="back-button">Back to Home Page</a>
+  </div>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  <section id="artists" class="artist-section">
+  <h2>Top Artists</h2>
+  <br>
+
+    <div class="artist-scroll">
+    <div class="artist-card" onclick="location.href='Ilaiyarajasongs.html'">
+  <img src="../pic/charliXCX.jpg" alt="Ilaiyaraja" />
+  <p>charli XCX</p>
+  </div>
+    
+  <div class="artist-card" onclick="location.href='anirudhsongs.html'">
+  <img src="../pic/Anirudh.jpg" alt="Anirudh" />
+  <p>Anirudh Ravichander</p>
+  </div>
+  
+  <div class="artist-card" onclick="location.href='dspsongs.html'">
+  <img src="../pic/DSP.jpg" alt="DSP" />
+  <p>Devi Sri Prasad</p>
+  </div>
+
+  <div class="artist-card" onclick="location.href='ARrahmansongs.html'">
+  <img src="pic/arrahman.jpg" alt="ARrahman" />
+  <p>A R Rahman</p>
+  </div>
+  <!-- Add more artist cards here -->
+  </div>
+  </section>
+  
+  
+  <!-- Social Media Section -->
+  <section class="social-media">
+  <h3>Follow Us</h3>
+  <div class="social-icons">
+  <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+  <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+  </div>
+  </section>
+  
+  <br>
+  
+  
+  
+  <footer>
+  <p>&copy; 2025 SongBook by Mr. Pollution.</p>
+  </footer>
+  
+  <script>
+  function toggleMenu() {
+  const menu = document.getElementById("nav-menu");
+  menu.classList.toggle("show");
+  }
+  
+  document.addEventListener("click", function(event) {
+  const navMenu = document.getElementById("nav-menu");
+  const toggleBtn = document.querySelector(".menu-toggle");
+  if (!navMenu.contains(event.target) && !toggleBtn.contains(event.target)) {
+  navMenu.classList.remove("show");
+  }
+  });
+  
+  // Carousel scroll tracking
+  const carousel = document.getElementById("langCarousel");
+  const indicators = document.querySelectorAll("#langIndicators span");
+  
+  carousel.addEventListener("scroll", () => {
+  const index = Math.round(carousel.scrollLeft / (carousel.scrollWidth / 5));
+  indicators.forEach((dot, i) => {
+  dot.classList.toggle("active", i === index);
+  });
+  });
+  </script>
+
+
+
+  
+    <script>
+  const searchInput = document.getElementById("searchInput");
+  const searchResults = document.getElementById("searchResults");
+
+  let songsData = [];
+
+  // Load JSON file
+  fetch("searchsongs.json")
+    .then((res) => res.json())
+    .then((data) => {
+      songsData = data;
+    });
+
+  searchInput.addEventListener("input", () => {
+    const query = searchInput.value.toLowerCase();
+    searchResults.innerHTML = "";
+
+    if (query.trim() === "") {
+      searchResults.style.display = "none";
+      return;
+    }
+
+    const filtered = songsData.filter(song =>
+      song.title.toLowerCase().includes(query) ||
+      (song.singer && song.singer.toLowerCase().includes(query)) ||
+      (song.movie && song.movie.toLowerCase().includes(query)) ||
+      (song.language && song.language.toLowerCase().includes(query))
+    );
+
+    if (filtered.length === 0) {
+      searchResults.innerHTML = "<div>No results found</div>";
+    } else {
+      filtered.slice(0, 10).forEach(song => {
+        const div = document.createElement("div");
+        div.textContent = `${song.title} - ${song.singer || "Unknown Singer"}`;
+        div.onclick = () => window.location.href = song.url;
+        searchResults.appendChild(div);
+      });
+    }
+
+    searchResults.style.display = "block";
+  });
+
+  document.addEventListener("click", function(event) {
+    if (!searchInput.contains(event.target) && !searchResults.contains(event.target)) {
+      searchResults.style.display = "none";
+    }
+  });
+    </script>
+
+</body>
+</html>
