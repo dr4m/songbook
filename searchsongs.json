@@ -128,6 +128,15 @@
     "link": "../english/ordinary.html",
     "cover": "../pic/ordinaryalex.jpg"
   },
+
+  {
+    "title": "Bad Dreams",
+    "movie": "Teddy Swims",
+    "category": "Pop",
+    "year": "2025",
+    "link": "../english/baddreams.html",
+    "cover": "../pic/baddreams.jpg"
+  },
   
   {
     "title": "cry for me",
