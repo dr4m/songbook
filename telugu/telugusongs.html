@@ -200,7 +200,7 @@
   let songsData = [];
 
   // Load JSON file
-  fetch("searchsongs.json")
+  fetch("../searchsongs.json")
     .then((res) => res.json())
     .then((data) => {
       songsData = data;
