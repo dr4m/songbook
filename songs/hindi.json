@@ -9,6 +9,18 @@
   "language": "Hindi",
   "category": "love",
   "cover": "../pic/raanjhan.jpg"
-}
+},
+
+  {
+  "title": "Akhiyaan Gulab",
+  "singer": "Mitraj",
+  "music": "Mitraj",
+  "movie": "Teri Baaton Mein Aisa Uljha Jiya",
+  "link": "../hindi/akhiyaan.html",
+  "year": "2024",
+  "language": "Hindi",
+  "category": "love",
+  "cover": "../pic/akhiyaan.jpg"
+  }
 
 ]
