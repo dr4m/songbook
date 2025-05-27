@@ -109,6 +109,19 @@
 },
 
   {
+  "title": "Premalo",
+  "singer": "Anurag kulakarni",
+  "music": "Vijai Bulganin",
+  "movie": "Court",
+  "link": "../telugu/premalo.html",
+  "year": "2025",
+  "language": "Telugu",
+  "category": "Love",
+  "actor": "Priyadarshi,Sridevi, Harsh Roshan",
+  "cover": "../pic/premalo.jpg"
+},
+
+  {
     "title": "Ordinary",
     "movie": "Alex Warren",
     "category": "Pop",
