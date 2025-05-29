@@ -107,9 +107,9 @@
       .then(res => res.json())
       .then(data => {
         const filtered = data.filter(song => {
-          if (!song.singer) return false;
-          const singerName = song.singer.toLowerCase().replace(/[^a-z]/g, "");
-          return singerName.includes(currentFile);
+          if (!song.actor) return false;
+          const singerName = song.actor.toLowerCase().replace(/[^a-z]/g, "");
+          return actorName.includes(currentFile);
         });
 
         const container = document.getElementById("artistSongs");
