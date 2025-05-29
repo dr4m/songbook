@@ -179,5 +179,13 @@
     "year": "2025",
     "link": "../english/diewithasmile.html",
     "cover": "../pic/die1.jpg"
+  },
+  
+  {
+  "type": "actor",
+  "name": "Allu Arjun",
+  "role": "Actor",
+  "url": "/artists/alluarjun.html"
   }
+  
 ]
