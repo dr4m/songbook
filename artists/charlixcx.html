@@ -171,6 +171,7 @@ fetch("../searchsongs.json")
   .then((res) => res.json())
   .then((data) => {
     songsData = data;
+       console.log("Fetched Data:", songsData);
   });
 
 searchInput.addEventListener("input", () => {
