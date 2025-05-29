@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZXYSW3PSS"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4ZXYSW3PSS');
+</script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Allu Arjun Songs | SongBook</title>
+  <meta name="description" content="Listen and explore the best songs of Allu Arjun including movie hits, love songs, mass beats and more on SongBook." />
+  <meta name="keywords" content="Allu Arjun songs, Allu Arjun hits, Telugu actor songs, Allu Arjun mp3, Allu Arjun movies, Pushpa songs, DJ songs, Ala Vaikunthapurramuloo, SongBook" />
+  <link rel="canonical" href="https://songbook.hacker404.site/artists/alluarjun.html" />
+   <link rel="stylesheet" href="../sbstyles.css">
+  <style>
+  
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #222;
+    }
+    #artistSongs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+    #artistSongs div {
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      width: 160px;
+      text-align: center;
+    }
+    #artistSongs img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    #artistSongs p {
+      margin-top: 8px;
+      font-weight: bold;
+    }
+    #artistSongs small {
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  
+  <header>
+       <div class="logo">
+          <a href="../index.html" style="text-decoration:none;"> 
+       <span class="white-txt">Song</span><span class="green-txt">Book</span></a>
+       </div>
+       <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+         <nav id="nav-menu">
+           <a href="../index.html">Home</a>
+           <a href="../trends/telugutrending.html">Trending</a>
+           <a href="../artists/artists.html">Artists</a>
+           <a href="../contact.html">Contact</a>
+           <a href="../aboutme.html">About Me</a>
+     </nav>
+     </header>
+     
+<!-- search box here -->
+     <div class="search-container">
+  <input type="text" id="searchInput" placeholder="Search songs or lyrics..." />
+  <div id="searchResults" class="search-results"></div>
+     </div>
+     
+ <section class="hero">
+    <h1>Best Lyrics Hub</h1>
+    <br>
+    <p>Explore lyrics of your favorite songs!</p>
+  </section>
+  
+  <br>
+  
+    <div class="artist-profile">
+  <div class="artist-header" style="text-align:center; padding:20px;">
+    <img src="alluarjun.jpg" alt="Allu Arjun" style="width:150px;height:150px;border-radius:50%;box-shadow:0 0 10px #ccc;"> 
+    </div></div>
+    
+    
+  <div class="container">
+    <h1>Allu Arjun Songs</h1>
+    <div id="artistSongs">
+      <p>Loading songs...</p>
+    </div>
+  </div>
+
+  <script>
+    const currentFile = location.pathname.split("/").pop().replace(".html", "").toLowerCase().replace(/[^a-z]/g, "");
+    fetch("../searchsongs.json")
+      .then(res => res.json())
+      .then(data => {
+        const filtered = data.filter(song => {
+          if (!song.singer) return false;
+          const singerName = song.singer.toLowerCase().replace(/[^a-z]/g, "");
+          return singerName.includes(currentFile);
+        });
+
+        const container = document.getElementById("artistSongs");
+        container.innerHTML = "";
+
+        if (filtered.length === 0) {
+          container.innerHTML = "<p>No songs found for this artist.</p>";
+        } else {
+          filtered.forEach(song => {
+            const div = document.createElement("div");
+            div.innerHTML = `
+              <a href="${song.link}" style="text-decoration:none; color:#000;">
+                <img src="${song.cover}" alt="${song.title}" />
+                <p>${song.title}</p>
+                <small>${song.movie || ""}</small>
+              </a>
+            `;
+            container.appendChild(div);
+          });
+        }
+      })
+      .catch(err => {
+        document.getElementById("artistSongs").innerHTML = "<p>Error loading songs.</p>";
+        console.error(err);
+      });
+  </script>
+
+<br>
+<br>
+ <!-- Back to Telugu Songs Button -->
+ <div style="text-align: center; margin: 40px 0;">
+ <a href="telugu.html" class="back-button">Back to Telugu Songs</a>
+ </div>
+ 
+ <br>
+
+
+ <!-- Social Media Section -->
+ <section class="social-media">
+ <h3>Follow Us</h3>
+ <div class="social-icons">
+ <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+ <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+ <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+ <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+ </div>
+ </section>
+ 
+ <br>
+ 
+  <footer>
+ <p>&copy; 2025 SongBook by Mr. Pollution</p>
+ </footer>
+ 
+<script>
+function toggleMenu() {
+ const menu = document.getElementById("nav-menu");
+ menu.classList.toggle("show");
+}
+
+document.addEventListener("click", function(event) {
+ const navMenu = document.getElementById("nav-menu");
+ const toggleBtn = document.querySelector(".menu-toggle");
+ if (!navMenu.contains(event.target) && !toggleBtn.contains(event.target)) {
+   navMenu.classList.remove("show");
+ }
+});
+</script>
+ 
+ 
+</body>
+</html>
