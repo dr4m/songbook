@@ -63,27 +63,18 @@
 
   <!-- Script to fetch and display songs -->
   <script>
-    const currentFile = location.pathname.split("/").pop().replace(".html", "").toLowerCase().replace(/[^a-z]/g, "");
+  fetch("../searchsongs.json")
+    .then(res => res.json())
+    .then(data => {
+      const filtered = data.filter(song => song.actor && song.actor.toLowerCase().includes("allu arjun"));
+      const container = document.getElementById("artistSongs");
 
-    fetch("../searchsongs.json")
-      .then(res => res.json())
-      .then(data => {
-        const filtered = data.filter(song => {
-          if (!song.actor) return false;
-          const actorName = song.actor.toLowerCase().replace(/[^a-z]/g, "");
-          return actorName.includes(currentFile);
-        });
-
-        const container = document.getElementById("artistSongs");
-        container.innerHTML = "";
-
-        if (filtered.length === 0) {
-          container.innerHTML = "<p>No songs found for this artist.</p>";
-        } else {
-          filtered.forEach(song => {
-            const div = document.createElement("div");
-            div.innerHTML = `
-              div.style.width = "160px";
+      if (filtered.length === 0) {
+        container.innerHTML = "<p>No songs found.</p>";
+      } else {
+        filtered.forEach(song => {
+          const div = document.createElement("div");
+          div.style.width = "160px";
           div.style.textAlign = "center";
           div.innerHTML = `
             <a href="${song.link}" style="text-decoration:none;color:#888;">
@@ -91,15 +82,11 @@
               <p style="margin-top:5px;font-weight:bold;">${song.title}</p>
               <small>${song.movie}</small>
             </a>
-            `;
-            container.appendChild(div);
-          });
-        }
-      })
-      .catch(err => {
-        document.getElementById("artistSongs").innerHTML = "<p>Error loading songs.</p>";
-        console.error(err);
-      });
+          `;
+          container.appendChild(div);
+        });
+      }
+    });
   </script>
 
   <br><br>
