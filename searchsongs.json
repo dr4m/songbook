@@ -182,14 +182,14 @@
   },
 
   {
-    "type": "artist",
+
     "name": "Charli XCX",
     "role": "Singer",
     "url": "../artists/charlixcx.html"
   },
   
   {
-    "type": "song",
+    
     "title": "Speed Drive",
     "singer": "Charli XCX",
     "movie": "Barbie",
