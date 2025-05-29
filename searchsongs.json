@@ -92,6 +92,7 @@
     "title": "party 4 u",
     "movie": "charlie xcx",
     "category": "Pop",
+    "year": "2020",
     "link": "../english/party4u.html",
     "cover": "../pic/party4u.jpg"
   },
@@ -128,7 +129,7 @@
   "year": "2024",
   "language": "Telugu",
   "category": "Love",
-    "actor": "ntr",
+  "actor": "ntr",
   "cover": "../pic/chuttamalle.jpg"
 },
 
@@ -147,7 +148,7 @@
 
   {
     "title": "Ordinary",
-    "movie": "Alex Warren",
+    "singer": "Alex Warren",
     "category": "Pop",
     "link": "../english/ordinary.html",
     "cover": "../pic/ordinaryalex.jpg"
@@ -155,7 +156,7 @@
 
   {
     "title": "Bad Dreams",
-    "movie": "Teddy Swims",
+    "singer": "Teddy Swims",
     "category": "Pop",
     "year": "2025",
     "link": "../english/baddreams.html",
@@ -164,16 +165,18 @@
   
   {
     "title": "cry for me",
-    "movie": "The Weeknd",
+    "singer": "The Weeknd",
     "category": "Pop",
+    "year": "2025",
     "link": "../english/cry4me.html",
     "cover": "../pic/cry4me.jpg"
   }
 
   {
     "title": "Die with a Smile",
-    "movie": "Lady Gaga, Bruno Mars",
+    "singer": "Lady Gaga, Bruno Mars",
     "category": "Pop",
+    "year": "2025",
     "link": "../english/diewithasmile.html",
     "cover": "../pic/die1.jpg"
   }
