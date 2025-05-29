@@ -1,4 +1,14 @@
 [
+
+  {
+    "title": "Die with a smile",
+    "movie": "Lady Gaga, Bruno Mars",
+    "category": "Pop",
+    "year": "2025",
+    "link": "../english/diewithasmile.html",
+    "cover": "../pic/die1.jpg"
+  },
+  
   {
     "title": "Bad Dreams",
     "movie": "Teddy Swims",
