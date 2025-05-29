@@ -111,7 +111,7 @@
   fetch("../searchsongs.json")
     .then(res => res.json())
     .then(data => {
-      const filtered = data.filter(song => song.singer && song.singer.toLowerCase().includes("Charli XCX"));
+      const filtered = data.filter(song => song.singer && song.singer.toLowerCase().includes("charliXCX"));
       const container = document.getElementById("artistSongs");
 
       if (filtered.length === 0) {
