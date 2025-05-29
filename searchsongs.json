@@ -179,12 +179,9 @@
   },
   
   {
-    
-    "title": "Speed Drive",
-    "singer": "Charli XCX",
-    "movie": "Barbie",
-    "language": "English",
-    "url": "speeddrive.html"
+  "name": "Allu Arjun",
+  "role": "Actor",
+  "url": "../artists/alluarjun.html"
   }
   
   
