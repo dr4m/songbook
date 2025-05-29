@@ -179,6 +179,23 @@
     "year": "2025",
     "link": "../english/diewithasmile.html",
     "cover": "../pic/die1.jpg"
+  },
+
+  {
+    "type": "artist",
+    "name": "Charli XCX",
+    "role": "Singer",
+    "url": "../artists/charlixcx.html"
+  },
+  
+  {
+    "type": "song",
+    "title": "Speed Drive",
+    "singer": "Charli XCX",
+    "movie": "Barbie",
+    "language": "English",
+    "url": "speeddrive.html"
   }
+  
   
 ]
