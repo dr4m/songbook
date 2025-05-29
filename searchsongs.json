@@ -179,20 +179,6 @@
     "year": "2025",
     "link": "../english/diewithasmile.html",
     "cover": "../pic/die1.jpg"
-  },
-  
-  {
-  "type": "actor",
-  "name": "Allu Arjun",
-  "role": "Actor",
-  "url": "../artists/alluarjun.html"
-  },
-
-  {
-  "type": "artist",
-  "name": "Anirudh Ravichandran",
-  "role": "Singer",
-  "url": "../artists/anirudh.html"
   }
   
 ]
