@@ -161,6 +161,31 @@ header input {
   font-size: 16px;
 }
 
+.search-results {
+  position: absolute;
+  width: 80%;
+  max-width: 400px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1f1f1f; /* Dark background */
+  color: #ffffff; /* White text */
+  border: 1px solid #444;
+  border-top: none;
+  z-index: 10;
+  display: none;
+  font-size: 15px;
+}
+
+.search-results div {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #333;
+}
+
+.search-results div:hover {
+  background: #333; /* Slightly lighter on hover */
+}
+
 
 .lang-card:nth-child(1) { background-color: #FF6B6B; }   /* Telugu - Red */
 .lang-card:nth-child(2) { background-color: #4ECDC4; }   /* Hindi - Teal */
