@@ -53,6 +53,10 @@
 <url>
     <loc>https://songbook.hacker404.site/english/party4u.html</loc>
   </url>
+
+  <url>
+    <loc>https://songbook.hacker404.site/english/baddreams.html</loc>
+  </url>
   
   <url>
     <loc> https://songbook.hacker404.site/artists/artists.html</loc>
@@ -70,6 +74,19 @@
     <loc>https://songbook.hacker404.site/trends/telugutrending.html</loc>
   </url>
 
+  <url>
+    <loc>https://songbook.hacker404.site/hindi/raanjhan.html</loc>
+  </url>
+
+  <url>
+    <loc>https://songbook.hacker404.site/hindi/hindisongs.html</loc>
+  </url>
+
+   <url>
+    <loc>https://songbook.hacker404.site/hindi/akhiyaan.html</loc>
+  </url>
+
+  
   
   
 </urlset>
