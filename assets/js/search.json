@@ -20,22 +20,32 @@ searchInput.addEventListener("input", () => {
     return;
   }
 
-  const filtered = songsData.filter(song =>
-    song.title?.toLowerCase().includes(query) ||
-    song.singer?.toLowerCase().includes(query) ||
-    song.movie?.toLowerCase().includes(query) ||
-    song.language?.toLowerCase().includes(query) ||
-    song.actor?.toLowerCase().includes(query)
+  const filtered = songsData.filter(item =>
+    (item.title && item.title.toLowerCase().includes(query)) ||
+    (item.singer && item.singer.toLowerCase().includes(query)) ||
+    (item.movie && item.movie.toLowerCase().includes(query)) ||
+    (item.language && item.language.toLowerCase().includes(query)) ||
+    (item.actor && item.actor.toLowerCase().includes(query)) ||
+    (item.name && item.name.toLowerCase().includes(query)) || // For artist name
+    (item.role && item.role.toLowerCase().includes(query))     // For artist role
   );
 
   if (filtered.length === 0) {
     searchResults.innerHTML = "<div class='no-results'>No results found</div>";
   } else {
-    filtered.slice(0, 10).forEach(song => {
+    filtered.slice(0, 10).forEach(item => {
       const div = document.createElement("div");
       div.classList.add("result-item");
-      div.textContent = `${song.title} - ${song.singer || "Unknown Singer"}`;
-      div.onclick = () => window.location.href = song.link;
+
+      // For artist objects (no title)
+      if (!item.title && item.name) {
+        div.textContent = `🎤 ${item.name} - ${item.role || "Artist"}`;
+        div.onclick = () => window.location.href = item.url;
+      } else {
+        div.textContent = `${item.title} - ${item.singer || "Unknown Singer"}`;
+        div.onclick = () => window.location.href = item.link;
+      }
+
       searchResults.appendChild(div);
     });
   }
