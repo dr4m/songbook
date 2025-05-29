@@ -169,4 +169,12 @@
     "link": "../english/cry4me.html",
     "cover": "../pic/cry4me.jpg"
   }
+
+  {
+    "title": "Die with a Smile",
+    "movie": "Lady Gaga, Bruno Mars",
+    "category": "Pop",
+    "link": "../english/diewithasmile.html",
+    "cover": "../pic/die1.jpg"
+  }
 ]
