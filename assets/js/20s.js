@@ -1,4 +1,4 @@
-<script>
+
   // STEP 1: Load song data
   fetch("../searchsongs.json") // Change this path to your actual JSON file
     .then(res => res.json())
@@ -35,4 +35,4 @@
       container.innerHTML = "<p>No Telugu 2000s songs found.</p>";
     }
   }
-</script>
+
