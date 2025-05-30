@@ -165,6 +165,7 @@ Oh-oh-oh-oh-oh (Gaga)
 Oh-oh-oh-oh-oh (Gaga)
 Oh-oh-oh-oh-oh (Gaga)
 Oh-oh-oh-oh-oh (Gaga)
+     
 Líberate, mi amor
 
 </pre>
@@ -243,70 +244,9 @@ Líberate, mi amor
  <p>&copy; 2025 SongBook by Mr. Pollution</p>
  </footer>
  
-<script>
-function toggleMenu() {
- const menu = document.getElementById("nav-menu");
- menu.classList.toggle("show");
-}
-
-document.addEventListener("click", function(event) {
- const navMenu = document.getElementById("nav-menu");
- const toggleBtn = document.querySelector(".menu-toggle");
- if (!navMenu.contains(event.target) && !toggleBtn.contains(event.target)) {
-   navMenu.classList.remove("show");
- }
-});
-</script>
- 
-  <script>
-  const searchInput = document.getElementById("searchInput");
-  const searchResults = document.getElementById("searchResults");
-
-  let songsData = [];
-
-  // Load JSON file
-  fetch("../searchsongs.json")
-    .then((res) => res.json())
-    .then((data) => {
-      songsData = data;
-    });
-
-  searchInput.addEventListener("input", () => {
-    const query = searchInput.value.toLowerCase();
-    searchResults.innerHTML = "";
-
-    if (query.trim() === "") {
-      searchResults.style.display = "none";
-      return;
-    }
-
-    const filtered = songsData.filter(song =>
-      song.title.toLowerCase().includes(query) ||
-      (song.singer && song.singer.toLowerCase().includes(query)) ||
-      (song.movie && song.movie.toLowerCase().includes(query)) ||
-      (song.language && song.language.toLowerCase().includes(query))
-    );
-
-    if (filtered.length === 0) {
-      searchResults.innerHTML = "<div>No results found</div>";
-    } else {
-      filtered.slice(0, 10).forEach(song => {
-        const div = document.createElement("div");
-        div.textContent = `${song.title} - ${song.singer || "Unknown Singer"}`;
-        div.onclick = () => window.location.href = song.url;
-        searchResults.appendChild(div);
-      });
-    }
-
-    searchResults.style.display = "block";
-  });
-
-  document.addEventListener("click", function(event) {
-    if (!searchInput.contains(event.target) && !searchResults.contains(event.target)) {
-      searchResults.style.display = "none";
-    }
-  });
-  </script>
+  <script src="assets/js/navtoggle.js"></script>
+  <script src="../assets/js/search.js"></script>
+    
 
 </body>
 </html>
