@@ -8,6 +8,15 @@
     "link": "../english/diewithasmile.html",
     "cover": "../pic/die1.jpg"
   },
+
+  {
+    "title": "Blody Mary",
+    "movie": "Lady Gaga",
+    "category": "Pop",
+    "year": "2011",
+    "link": "../english/blodymary.html",
+    "cover": "../pic/blodymary.jpg"
+  },
   
   {
     "title": "Bad Dreams",
