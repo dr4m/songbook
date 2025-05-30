@@ -73,7 +73,9 @@
     .then(res => res.json())
     .then(data => {
       const filtered = data.filter(song => song.singer && song.singer.toLowerCase().includes("DSP"));
-      const container = document.getElementById("artistSongs");
+      const filtered = data.filter(song => song.music && song.music.toLowerCase().includes("DSP"));
+         
+         const container = document.getElementById("artistSongs");
 
       if (filtered.length === 0) {
         container.innerHTML = "<p>No songs found.</p>";
