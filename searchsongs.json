@@ -171,6 +171,16 @@
     "cover": "../pic/die1.jpg"
   },
 
+  
+  {
+    "title": "Blody Mary",
+    "singer": "Lady Gaga",
+    "category": "Pop",
+    "year": "2011",
+    "link": "../english/blodymary.html",
+    "cover": "../pic/blodymary.jpg"
+  },
+
   {
 
     "name": "Charli XCX",
