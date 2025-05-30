@@ -211,7 +211,20 @@
   "language": "Telugu",
   "category": "20s",
   "cover": "../pic/nalone.jpg"
-}
+},
+
+  {
+  "title": "Mellaga Karagani",
+  "actor": "Prabhas",
+  "singer": "S. P. Charan",
+  "music": "DSP",
+  "movie": "Varsham",
+  "link": "../telugu/mellaga.html",
+  "year": "2003",
+  "language": "Telugu",
+  "category": "20s",
+  "cover": "../pic/mellaga.jpg"
+  }
   
   
 ]
