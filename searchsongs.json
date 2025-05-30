@@ -192,7 +192,20 @@
   "name": "Allu Arjun",
   "role": "Actor",
   "url": "../artists/alluarjun.html"
-  }
+  },
+
+  {
+  "title": "Nalone Pongenu Narmada",
+  "actor": "surya",
+  "singer": "Harish Raghavendra",
+  "music": "Harris Jayaraj",
+  "movie": "Surya S/o Krishnan",
+  "link": "../telugu/nalone.html",
+  "year": "2008",
+  "language": "Telugu",
+  "category": "20s",
+  "cover": "../pic/nalone.jpg"
+}
   
   
 ]
