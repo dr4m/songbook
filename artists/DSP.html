@@ -72,7 +72,7 @@
   fetch("../searchsongs.json")
     .then(res => res.json())
     .then(data => {
-      const filtered = data.filter(song => song.singer && song.singer.toLowerCase().includes("devisriprasad"));
+      const filtered = data.filter(song => song.singer && song.singer.toLowerCase().includes("DSP"));
       const container = document.getElementById("artistSongs");
 
       if (filtered.length === 0) {
