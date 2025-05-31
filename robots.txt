@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://hacker404.site/sitemap.xml
+Sitemap:
+https://hacker404.site/sitemap.xml
