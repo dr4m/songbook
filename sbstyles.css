@@ -427,6 +427,37 @@ html {
   transform: scale(1.05);
 }
 
+/* lyrics container design*/
+
+.lyrics-container {
+   max-width: 600px;
+   margin: auto;
+   text-align: center;
+   }
+   .lyrics-container img {
+   width: 100%;
+   max-width: 300px;
+   border-radius: 10px;
+   }
+   .lyrics-container h1 {
+   margin-top: 20px;
+   color: #00ffd5;
+   }
+   .lyrics-container pre {
+   text-align: left;
+   white-space: pre-wrap;
+   margin-top: 20px;
+   background: #1f1f1f;
+   padding: 15px;
+   border-radius: 8px;
+   }
+   
+   .lyrics-container p {
+     color: orange;
+     padding-right: 5px;
+     word-spacing: 2px;
+   }
+
 
 
 
