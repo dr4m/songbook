@@ -23,6 +23,17 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link rel="stylesheet" href="../sbstyles.css" />
 
+  <style>
+    #songsContainer {
+      display:flex;
+      flex-wrap:wrap;
+      gap:15px;
+      justify-content:center;
+      text-decoration:none;
+      color:#888;
+      
+    }
+  </style>
 
 </head>
 <body>
@@ -69,7 +80,7 @@
   <script>
   let filteredSongs = [];
   let visibleCount = 0;
-  const loadBatch = 8;
+  const loadBatch = 6;
 
   // Load songs from JSON
   async function fetchSongs() {
@@ -96,8 +107,8 @@
       const song = filteredSongs[i];
       const songHTML = `
         <div class="song-card">
-          <img src="${song.cover}" alt="${song.title}" />
-          <div class="song-title">${song.title}</div>
+          <img src="${song.cover}" alt="${song.title}" style="width:100%;border-radius:10px; />
+          <div class="song-title">${song.title}  style="margin-top:5px;font-weight:bold;</div>
           <a class="view-btn" href="${song.link}">View Lyrics</a>
         </div>`;
       container.insertAdjacentHTML("beforeend", songHTML);
