@@ -39,15 +39,19 @@ button:active {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-}
-
-body {
   background: #121212;
   color: #fff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+}
+
+#player iframe {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    position: absolute;
 }
 
 header {
