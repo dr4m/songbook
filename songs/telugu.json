@@ -96,5 +96,44 @@
   "category": "Devotional",
   "cover": "../pic/asurahananam.jpg"
   }
+
+    {
+  "title": "Mellaga Karagani",
+  "actor": "Prabhas",
+  "singer": "S. P. Charan",
+  "music": "DSP",
+  "movie": "Varsham",
+  "link": "../telugu/mellaga.html",
+  "year": "2003",
+  "language": "Telugu",
+  "category": "20s",
+  "cover": "../pic/mellaga.jpg"
+    }
+
+  {
+  "title": "Nalone Pongenu Narmada",
+  "actor": "surya",
+  "singer": "Harish Raghavendra",
+  "music": "Harris Jayaraj",
+  "movie": "Surya S/o Krishnan",
+  "link": "../telugu/nalone.html",
+  "year": "2008",
+  "language": "Telugu",
+  "category": "20s",
+  "cover": "../pic/nalone.jpg"
+},
+
+    {
+  "title": "Peelings",
+  "actor": "Allu Arjun",
+  "singer": "Shankarr Babu Kandukoori, Laxmi Dasa",
+  "music": "DSP",
+  "movie": "Pusha The Rule",
+  "link": "../telugu/peelings.html",
+  "year": "2025",
+  "language": "Telugu",
+  "category": "Love",
+  "cover": "../pic/peelings.webp"
+    }
   
 ]
