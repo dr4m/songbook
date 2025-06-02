@@ -126,7 +126,7 @@
 
 <button id="loadMoreBtn">Load More Songs</button>
 
-<script>
+  <script>
   let filteredSongs = [];
   let visibleCount = 0;
   const loadBatch = 8;
@@ -156,9 +156,9 @@
       const song = filteredSongs[i];
       const songHTML = `
         <div class="song-card">
-          <img src="${song.thumbnail}" alt="${song.title}" />
+          <img src="${song.cover}" alt="${song.title}" />
           <div class="song-title">${song.title}</div>
-          <a class="view-btn" href="${song.pageLink}">View Lyrics</a>
+          <a class="view-btn" href="${song.link}">View Lyrics</a>
         </div>`;
       container.insertAdjacentHTML("beforeend", songHTML);
     }
@@ -166,11 +166,7 @@
     visibleCount = end;
 
     const loadBtn = document.getElementById("loadMoreBtn");
-    if (visibleCount >= filteredSongs.length) {
-      loadBtn.textContent = "Hide Songs";
-    } else {
-      loadBtn.textContent = "Load More Songs";
-    }
+    loadBtn.textContent = (visibleCount >= filteredSongs.length) ? "Hide Songs" : "Load More Songs";
   }
 
   document.getElementById("loadMoreBtn").addEventListener("click", () => {
@@ -186,7 +182,8 @@
   });
 
   fetchSongs();
-</script>
+  </script>
+
 
   <!-- Contact Section -->
   <section style="margin-top: 50px; padding: 20px;">
