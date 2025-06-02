@@ -23,6 +23,76 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link rel="stylesheet" href="../sbstyles.css" />
 
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #fff;
+      color: #111;
+    }
+
+    .songs-container1 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .song-card {
+      background: #f0f0f0;
+      padding: 15px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .song-card img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .song-title {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .view-btn {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 8px 15px;
+      background: #222;
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+
+    .view-btn:hover {
+      background: #444;
+    }
+
+    #loadMoreBtn {
+      display: block;
+      margin: 30px auto;
+      padding: 12px 24px;
+      background: #333;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      .songs-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
   
