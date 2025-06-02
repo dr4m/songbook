@@ -5,6 +5,17 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/* Remove blue outline on click/focus */
+*:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+a:active,
+button:active {
+  background-color: transparent !important;
+}
+
 @font-face {
   font-family: 'Poppins';
   src: url('assets/fonts/Poppins-Regular.woff2') format('woff2'),
