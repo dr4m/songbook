@@ -106,6 +106,7 @@
     "movie": "charlie xcx",
     "category": "Pop",
     "year": "2020",
+    "language": "English",
     "link": "../english/party4u.html",
     "cover": "../pic/party4u.jpg"
   },
@@ -152,6 +153,7 @@
   {
     "title": "Ordinary",
     "singer": "Alex Warren",
+    "language": "English",
     "category": "Pop",
     "link": "../english/ordinary.html",
     "cover": "../pic/ordinaryalex.jpg"
@@ -161,6 +163,7 @@
     "title": "Bad Dreams",
     "singer": "Teddy Swims",
     "category": "Pop",
+    "language": "English",
     "year": "2025",
     "link": "../english/baddreams.html",
     "cover": "../pic/baddreams.jpg"
@@ -170,6 +173,7 @@
     "title": "cry for me",
     "singer": "The Weeknd",
     "category": "Pop",
+    "language": "English",
     "year": "2025",
     "link": "../english/cry4me.html",
     "cover": "../pic/cry4me.jpg"
@@ -179,6 +183,7 @@
     "title": "Die with a Smile",
     "singer": "Lady Gaga, Bruno Mars",
     "category": "Pop",
+    "language": "English",
     "year": "2025",
     "link": "../english/diewithasmile.html",
     "cover": "../pic/die1.jpg"
@@ -188,6 +193,7 @@
   {
     "title": "Blody Mary",
     "singer": "Lady Gaga",
+    "language": "English",
     "category": "Pop",
     "year": "2011",
     "link": "../english/blodymary.html",
@@ -204,6 +210,7 @@
   {
     "name": "Lady Gaga",
     "role": "Singer",
+    "language": "English",
     "link": "../artists/ladygaga.html"
    },
   
