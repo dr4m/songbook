@@ -101,13 +101,12 @@
     <p><strong>Year:&nbsp;&nbsp;</strong>2024</p>
 
 <br>
-    
-    <!-- ▶️ Play Song Button -->
 
-    <button id="playButton" onclick="loadAndPlay()" style="
+    <!-- ▶️ Play Song Button -->
+<button id="playButton" onclick="loadAndPlay()" style="
   margin: 20px auto;
   display: block;
-  background: linear-gradient(to right, #ff6a00, #ee0979); /* Orange to pink gradient */
+  background: linear-gradient(to right, #ff6a00, #ee0979);
   color: white;
   font-size: 18px;
   padding: 12px 30px;
@@ -120,16 +119,18 @@
 onmouseover="this.style.transform='scale(1.05)'" 
 onmouseout="this.style.transform='scale(1)'">
   ▶️ Play Song
-    </button>
+</button>
 
+<!-- Song data-src holder -->
+<div id="song" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></div>
 
-    <script>
+<script>
   let audio;
   let isPlaying = false;
 
   function loadAndPlay() {
     const audioSrc = document.getElementById("song").getAttribute("data-src");
-    
+
     if (!audio) {
       audio = new Audio(audioSrc);
     }
@@ -143,12 +144,15 @@ onmouseout="this.style.transform='scale(1)'">
     }
 
     isPlaying = !isPlaying;
+
+    // Reset button when song ends
+    audio.onended = () => {
+      isPlaying = false;
+      document.getElementById("playButton").innerText = "▶️ Play Song";
+    };
   }
-    </script>
-
+</script>
     
-    
-
     <!-- Lyrics Section -->
     <pre id="lyrics" style="text-align:center;">
 Mallika Bannante Ambukala  
