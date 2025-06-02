@@ -100,8 +100,8 @@
     <p><strong>Lyrics:&nbsp;&nbsp;</strong>Chandrabose</p>
     <p><strong>Year:&nbsp;&nbsp;</strong>2024</p>
 
-    <!-- ▶️ Play Song Button -->
-<button id="playButton" onclick="loadAndPlay()" style="
+    <!-- ▶️ Play / ⏸️ Pause Button -->
+<button id="playButton" onclick="togglePlay()" style="
   margin: 20px auto;
   display: block;
   background: linear-gradient(to right, #ff6a00, #ee0979);
@@ -113,21 +113,52 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: background 0.3s ease, transform 0.2s;
-" 
-onmouseover="this.style.transform='scale(1.05)'" 
+"
+onmouseover="this.style.transform='scale(1.05)'"
 onmouseout="this.style.transform='scale(1)'">
   ▶️ Play Song
 </button>
 
+<!-- Hidden YouTube iframe -->
+<div id="player" style="width:1px; height:1px; opacity:0; position:absolute; pointer-events:none;"></div>
+
+<!-- Load YouTube IFrame API -->
+<script src="https://www.youtube.com/iframe_api"></script>
 
 <script>
-    function playAudio() {
-      const videoID = "m7gCn9u9bM4"; // Replace with your song's video ID
-      const player = document.getElementById("ytPlayer");
-      player.src = `https://www.youtube.com/embed/${videoID}?autoplay=1`;
-    }
-</script>
+  let player;
+  let isPlaying = false;
 
+  // YouTube API will call this function when ready
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '1',
+      width: '1',
+      videoId: 'm7gCn9u9bM4', // Replace with your video ID
+      events: {
+        'onReady': onPlayerReady
+      }
+    });
+  }
+
+  function onPlayerReady(event) {
+    // Player is ready
+  }
+
+  function togglePlay() {
+    if (!player) return;
+
+    if (isPlaying) {
+      player.pauseVideo();
+      document.getElementById("playButton").innerText = "▶️ Play Song";
+    } else {
+      player.playVideo();
+      document.getElementById("playButton").innerText = "⏸️ Pause Song";
+    }
+
+    isPlaying = !isPlaying;
+  }
+</script>
     
     
     <!-- Lyrics Section -->
