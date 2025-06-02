@@ -123,33 +123,14 @@ onmouseout="this.style.transform='scale(1)'">
 <div id="song" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></div>
 
 <script>
-  let audio;
-  let isPlaying = false;
-
-  function loadAndPlay() {
-    const audioSrc = document.getElementById("song").getAttribute("data-src");
-
-    if (!audio) {
-      audio = new Audio(audioSrc);
+    function playAudio() {
+      const videoID = "m7gCn9u9bM4"; // Replace with your song's video ID
+      const player = document.getElementById("ytPlayer");
+      player.src = `https://www.youtube.com/embed/${videoID}?autoplay=1`;
     }
-
-    if (isPlaying) {
-      audio.pause();
-      document.getElementById("playButton").innerText = "▶️ Play Song";
-    } else {
-      audio.play();
-      document.getElementById("playButton").innerText = "⏸️ Pause Song";
-    }
-
-    isPlaying = !isPlaying;
-
-    // Reset button when song ends
-    audio.onended = () => {
-      isPlaying = false;
-      document.getElementById("playButton").innerText = "▶️ Play Song";
-    };
-  }
 </script>
+
+    
     
     <!-- Lyrics Section -->
     <pre id="lyrics" style="text-align:center;">
