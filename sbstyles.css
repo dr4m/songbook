@@ -5,6 +5,12 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/* 🔧 Fix mobile tap highlight + focus outline */
+* {
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-focus-ring-color: transparent !important;
+}
+
 /* Remove blue outline on click/focus */
 *:focus {
   outline: none !important;
