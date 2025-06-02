@@ -527,4 +527,21 @@ html {
     margin: 10px auto;
     width: 100%;
   }
+
+  /* 🔧 Fix mobile tap highlight + focus outline */
+* {
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-focus-ring-color: transparent !important;
+}
+
+/* Remove blue outline on click/focus */
+*:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+a:active,
+button:active {
+  background-color: transparent !important;
+}
 }
