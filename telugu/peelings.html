@@ -101,33 +101,53 @@
     <p><strong>Year:&nbsp;&nbsp;</strong>2024</p>
 
 <br>
+    
     <!-- ▶️ Play Song Button -->
 
-    <button onclick="loadAndPlay()" style="margin: 10px auto; display: block; background: #00ffd5; color: black; font-size: 18px; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">▶️ Play Song</button>
-    <div id="player" style="display:none;"></div>
+    <button id="playButton" onclick="loadAndPlay()" style="
+  margin: 20px auto;
+  display: block;
+  background: linear-gradient(to right, #ff6a00, #ee0979); /* Orange to pink gradient */
+  color: white;
+  font-size: 18px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+" 
+onmouseover="this.style.transform='scale(1.05)'" 
+onmouseout="this.style.transform='scale(1)'">
+  ▶️ Play Song
+    </button>
 
-    
+
     <script>
-  let player;
-  function loadAndPlay() {
-    const tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    document.body.appendChild(tag);
+  let audio;
+  let isPlaying = false;
 
-    window.onYouTubeIframeAPIReady = function () {
-      player = new YT.Player('player', {
-        height: '0',
-        width: '0',
-        videoId: 'm7gCn9u9bM4', // Your song ID here
-        events: {
-          'onReady': function (event) {
-            event.target.playVideo();
-          }
-        }
-      });
-    };
+  function loadAndPlay() {
+    const audioSrc = document.getElementById("song").getAttribute("data-src");
+    
+    if (!audio) {
+      audio = new Audio(audioSrc);
+    }
+
+    if (isPlaying) {
+      audio.pause();
+      document.getElementById("playButton").innerText = "▶️ Play Song";
+    } else {
+      audio.play();
+      document.getElementById("playButton").innerText = "⏸️ Pause Song";
+    }
+
+    isPlaying = !isPlaying;
   }
     </script>
+
+    
+    
 
     <!-- Lyrics Section -->
     <pre id="lyrics" style="text-align:center;">
