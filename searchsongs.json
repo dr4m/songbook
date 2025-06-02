@@ -230,7 +230,20 @@
   "language": "Telugu",
   "category": "20s",
   "cover": "../pic/mellaga.jpg"
-  }
+  },
+
+  {
+  "title": "Peelings",
+  "actor": "Allu Arjun",
+  "singer": "Shankarr Babu Kandukoori, Laxmi Dasa",
+  "music": "DSP",
+  "movie": "Pusha The Rule",
+  "link": "../telugu/peelings.html",
+  "year": "2025",
+  "language": "Telugu",
+  "category": "Love",
+  "cover": "../pic/peelings.webp"
+    },
   
   
 ]
