@@ -60,7 +60,7 @@
   <br>
 
 
-<div class="songs-container" id="songsContainer">
+<div class="songs-container" id="songsContainer1">
   <!-- Songs will be loaded here -->
 </div>
 
@@ -89,7 +89,7 @@
   }
 
   function renderSongs() {
-    const container = document.getElementById("songsContainer");
+    const container = document.getElementById("songsContainer1");
     const end = Math.min(visibleCount + loadBatch, filteredSongs.length);
 
     for (let i = visibleCount; i < end; i++) {
