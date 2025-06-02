@@ -93,6 +93,28 @@
     <p><strong>Lyrics:&nbsp;&nbsp;</strong>Chandrabose</p>
     <p><strong>Year:&nbsp;&nbsp;</strong>2024</p>
 
+    <script>
+  let player;
+  function loadAndPlay() {
+    const tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    document.body.appendChild(tag);
+
+    window.onYouTubeIframeAPIReady = function () {
+      player = new YT.Player('player', {
+        height: '0',
+        width: '0',
+        videoId: 'm7gCn9u9bM4', // Your song ID here
+        events: {
+          'onReady': function (event) {
+            event.target.playVideo();
+          }
+        }
+      });
+    };
+  }
+    </script>
+
     <!-- Lyrics Section -->
     <pre id="lyrics" style="text-align:center;">
 Mallika Bannante Ambukala  
