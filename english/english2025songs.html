@@ -102,7 +102,7 @@
       <a href="../trends/telugutrending.html">Trending</a>
       <a href="../artists/artists.html">Artists</a>
       <a href="../contact.html">Contact</a>
-      <a href="../aboutme.html">About Me</a>
+      <a href="../aboutme.html">About Us</a>
       <a href="../privacy.html">Privacy</a>
     </nav>
   </header>
@@ -134,7 +134,7 @@
   // Load songs from JSON
   async function fetchSongs() {
     try {
-      const response = await fetch('searchsongs.json');
+      const response = await fetch('../searchsongs.json');
       const data = await response.json();
 
       // Filter by year & language
