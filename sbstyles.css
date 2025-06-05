@@ -502,7 +502,34 @@ html {
 
 
 
+ .year-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 10px;
+  border-radius: 10px;
+  scroll-behavior: smooth;
+}
 
+.year-button {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: ;
+  border-radius: 30px;
+  border: 1px solid ;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+}
+
+.year-button:hover {
+  background-color: #e3e3ff;
+}
 
 
 
