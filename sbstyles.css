@@ -509,10 +509,12 @@ html {
   padding: 10px;
   border-radius: 10px;
   scroll-behavior: smooth;
+   text-decoration: none;
 }
 
 .year-button {
   flex: 0 0 auto;
+  text-decoration:none;
   scroll-snap-align: start;
   padding: 10px 20px;
   margin-right: 10px;
@@ -529,6 +531,7 @@ html {
 
 .year-button:hover {
   background-color: #e3e3ff;
+  text-decoration:none;
 }
 
 
