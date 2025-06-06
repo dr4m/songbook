@@ -50,6 +50,10 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Poppins', sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 #player iframe {
