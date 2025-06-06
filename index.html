@@ -56,6 +56,11 @@ a:active,
 button:active {
   background-color: transparent !important;
 }
+  .bell-icon i {
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: 100px;
+  }
 </style>
 
 </head>
@@ -71,6 +76,12 @@ button:active {
           <a href="../index.html" style="text-decoration:none;"> 
        <span class="white-txt">Song</span><span class="green-txt">Book</span></a>
     </div>
+
+     <div class="bell-icon" onclick="toggleNotification()">
+    <i id="bellIcon" class="fas fa-bell"></i>
+     </div>
+
+    
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <nav id="nav-menu">
       <a href="index.html">Home</a>
