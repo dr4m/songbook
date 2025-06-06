@@ -56,11 +56,37 @@ a:active,
 button:active {
   background-color: transparent !important;
 }
-  .bell-icon i {
-    font-size: 22px;
-    cursor: pointer;
-    margin-left: 100px;
-  }
+  .bell-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 26px;
+  color: gray;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.toast {
+  visibility: hidden;
+  min-width: 200px;
+  background-color: #323232;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 12px;
+  position: fixed;
+  z-index: 9999;
+  right: 20px;
+  bottom: 30px;
+  font-size: 15px;
+  transition: visibility 0s, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+}
 </style>
 
 </head>
@@ -81,6 +107,9 @@ button:active {
 <div class="bell-icon" onclick="toggleNotification()">
   <i id="bellIcon" class="fas fa-bell"></i>
 </div>
+
+    <!-- Toast Message -->
+<div id="toast" class="toast">Subscribed to notifications ✅</div>
 
     
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
@@ -271,20 +300,21 @@ button:active {
 <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
 
 <!-- Custom Notification Script -->
+<!-- OneSignal SDK -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+
 <script>
-  // --- Initialize OneSignal without default bell ---
   window.OneSignalDeferred = window.OneSignalDeferred || [];
   OneSignalDeferred.push(async function(OneSignal) {
     await OneSignal.init({
       appId: "46235639-1bd7-4d21-8ed6-3ca9f8dcac52",
       safari_web_id: "web.onesignal.auto.1cd53ad7-1124-4d48-8712-0a155e6245f9",
       notifyButton: {
-        enable: false, // 👈 Disable default OneSignal bell
+        enable: false, // We use our own bell
       },
     });
   });
 
-  // --- Custom Bell Logic ---
   let notificationsEnabled = localStorage.getItem('notify') === 'true';
 
   function updateBellIcon() {
@@ -292,20 +322,30 @@ button:active {
     bell.style.color = notificationsEnabled ? 'gold' : 'gray';
   }
 
+  function showToast(message) {
+    const toast = document.getElementById("toast");
+    toast.textContent = message;
+    toast.classList.add("show");
+    setTimeout(() => {
+      toast.classList.remove("show");
+    }, 3000);
+  }
+
   function toggleNotification() {
     notificationsEnabled = !notificationsEnabled;
     localStorage.setItem('notify', notificationsEnabled);
     updateBellIcon();
 
-    // If enabled, trigger OneSignal prompt
     if (notificationsEnabled && window.OneSignal) {
       OneSignalDeferred.push(function(OneSignal) {
         OneSignal.showSlidedownPrompt();
       });
+      showToast("✅ Subscribed to notifications!");
+    } else {
+      showToast("🔕 Notifications turned off.");
     }
   }
 
-  // Update icon on load
   updateBellIcon();
 </script>
 
