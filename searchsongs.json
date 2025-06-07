@@ -13,6 +13,19 @@
 },
 
   {
+  "title": "Ullaasam",
+    "actor": "nani",
+  "singer": "Krishna Lasya Muthyala, Sanjith Hegde",
+  "music": "Jakes Bejoy",
+  "movie": "saripodhaa sanivaaram",
+  "link": "../telugu/ullaasam.html",
+  "year": "2024",
+  "language": "Telugu",
+  "category": "Love",
+  "cover": "../pic/ullaasam.jpg"
+},
+
+  {
   "title": "Raanjhan",
   "singer": "Sachet Parampara, Parampara Tandon",
   "music": "Sachet Parampara",
