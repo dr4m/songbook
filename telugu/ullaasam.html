@@ -260,11 +260,13 @@ onmouseout="this.style.transform='scale(1)'">
 <!-- Load YouTube IFrame API -->
 <script src="https://www.youtube.com/iframe_api"></script>
 
+<script src="https://www.youtube.com/iframe_api"></script>
+
 <script>
   let player;
   let isPlaying = false;
+  let adShown = false;
 
-  // YouTube API will call this function when ready
   function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
       height: '1',
@@ -277,11 +279,16 @@ onmouseout="this.style.transform='scale(1)'">
   }
 
   function onPlayerReady(event) {
-    // Player is ready
+    // Player ready
   }
 
   function togglePlay() {
     if (!player) return;
+
+    if (!adShown) {
+      window.open("https://www.profitableratecpm.com/dwvbaes2?key=6bfa06899945fcefb3329b4368ea15d1", "_blank");
+      adShown = true;
+    }
 
     if (isPlaying) {
       player.pauseVideo();
@@ -294,7 +301,6 @@ onmouseout="this.style.transform='scale(1)'">
     isPlaying = !isPlaying;
   }
 </script>
-
 
 
 <!-- Toggle Switch Button -->
