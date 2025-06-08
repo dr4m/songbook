@@ -41,23 +41,24 @@
   <p class="note">🔁 You'll see an ad first. Please wait 3 sec for the download page.</p>
 
   <script>
-    function startDownload() {
-      const input = document.getElementById("reelUrl").value.trim();
-      if (!input.includes("instagram.com")) {
-        alert("Please enter a valid Instagram URL.");
-        return;
-      }
+function startDownload() {
+  const input = document.getElementById("reelUrl").value.trim();
 
-      // Step 1: Open ad in a new tab
-      window.open("https://cpmlink.net/YOUR_AD_TOKEN", "_blank");
+  if (!input.includes("instagram.com")) {
+    alert("Please enter a valid Instagram URL.");
+    return;
+  }
 
-      // Step 2: Redirect after 3 seconds to a public downloader
-      setTimeout(() => {
-        const encoded = encodeURIComponent(input);
-        const redirectURL = `https://ssstik.io/en?url=${encoded}`;
-        window.open(redirectURL, "_blank");
-      }, 3000);
-    }
+  // Step 1: Open Ad
+  window.open("https://cpmlink.net/YOUR_AD_TOKEN", "_blank");
+
+  // Step 2: After 3 seconds, redirect to iGram
+  setTimeout(() => {
+    const encodedURL = encodeURIComponent(input);
+    const finalURL = `https://igram.io/en/dl?url=${encodedURL}`;
+    window.open(finalURL, "_blank");
+  }, 3000);
+}
   </script>
 
 </body>
