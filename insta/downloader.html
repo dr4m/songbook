@@ -3,62 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <title>Instagram Reels Downloader - Hacker404</title>
-  <meta name="description" content="Download Instagram Reels for free. Paste link and download.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <style>
     body {
-      background: #111;
-      color: #fff;
-      font-family: Arial, sans-serif;
+      background: #000;
+      color: #0f0;
+      font-family: monospace;
       text-align: center;
-      padding: 20px;
+      padding: 40px;
     }
-
     input, button {
       padding: 10px;
-      margin: 10px auto;
-      width: 90%;
-      max-width: 500px;
-      font-size: 16px;
-      display: block;
+      width: 80%;
+      max-width: 400px;
+      border-radius: 8px;
+      border: none;
+      margin-top: 15px;
     }
-
-    .note {
-      font-size: 14px;
-      color: #bbb;
+    button {
+      background: #ff0;
+      font-weight: bold;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
 
   <h1>📥 Instagram Reels Downloader</h1>
-  <p>Paste the Instagram Reel link below and click download</p>
-
+  <p>Paste your Instagram reel or video URL below:</p>
+  
   <input type="text" id="reelUrl" placeholder="https://www.instagram.com/reel/..." />
+  <br>
   <button onclick="startDownload()">Download Now</button>
 
-  <p class="note">🔁 You'll see an ad first. Please wait 3 sec for the download page.</p>
-
   <script>
-function startDownload() {
-  const input = document.getElementById("reelUrl").value.trim();
+    function startDownload() {
+      const input = document.getElementById("reelUrl").value.trim();
 
-  if (!input.includes("instagram.com")) {
-    alert("Please enter a valid Instagram URL.");
-    return;
-  }
+      if (!input || !input.includes("instagram.com")) {
+        alert("Please enter a valid Instagram URL.");
+        return;
+      }
 
-  // Step 1: Open Ad
-  window.open("https://cpmlink.net/YOUR_AD_TOKEN", "_blank");
+      // 1. Open ad
+      window.open("https://cpmlink.net/YOUR_AD_TOKEN", "_blank");
 
-  // Step 2: After 3 seconds, redirect to iGram
-  setTimeout(() => {
-    const encodedURL = encodeURIComponent(input);
-    const finalURL = `https://igram.io/en/dl?url=${encodedURL}`;
-    window.open(finalURL, "_blank");
-  }, 3000);
-}
+      // 2. Then redirect to iGram.io
+      setTimeout(() => {
+        const encoded = encodeURIComponent(input);
+        const finalURL = `https://igram.io/en/dl?url=${encoded}`;
+        window.open(finalURL, "_blank");
+      }, 3000);
+    }
   </script>
 
 </body>
