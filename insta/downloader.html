@@ -6,22 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      background: #000;
+      background-color: #000;
       color: #0f0;
-      font-family: monospace;
+      font-family: Arial, sans-serif;
       text-align: center;
       padding: 40px;
     }
     input, button {
-      padding: 10px;
-      width: 80%;
+      padding: 12px;
+      width: 90%;
       max-width: 400px;
-      border-radius: 8px;
-      border: none;
       margin-top: 15px;
+      border-radius: 6px;
+      border: none;
+      font-size: 16px;
     }
     button {
-      background: #ff0;
+      background-color: #00ff99;
+      color: #000;
       font-weight: bold;
       cursor: pointer;
     }
@@ -29,31 +31,30 @@
 </head>
 <body>
 
-  <h1>📥 Instagram Reels Downloader</h1>
-  <p>Paste your Instagram reel or video URL below:</p>
-  
+  <h2>🎬 Insta Reels Downloader</h2>
+  <p>Paste your Instagram Reel URL below:</p>
+
   <input type="text" id="reelUrl" placeholder="https://www.instagram.com/reel/..." />
   <br>
-  <button onclick="startDownload()">Download Now</button>
+  <button onclick="startDownload()">Download</button>
 
   <script>
     function startDownload() {
-      const input = document.getElementById("reelUrl").value.trim();
+      const url = document.getElementById("reelUrl").value.trim();
 
-      if (!input || !input.includes("instagram.com")) {
-        alert("Please enter a valid Instagram URL.");
+      if (!url.includes("instagram.com")) {
+        alert("Please enter a valid Instagram Reel URL.");
         return;
       }
 
-      // 1. Open ad
-      window.open("https://cpmlink.net/YOUR_AD_TOKEN", "_blank");
+      // Open CPM / Adsterra link
+      window.open("https://cpmlink.net/YOUR-AD-LINK", "_blank"); // replace this with your real CPM ad link
 
-      // 2. Then redirect to iGram.io
+      // Redirect to third-party downloader after delay
       setTimeout(() => {
-        const encoded = encodeURIComponent(input);
-        const finalURL = `https://igram.io/en/dl?url=${encoded}`;
-        window.open(finalURL, "_blank");
-      }, 3000);
+        const redirect = `https://igram.io/en/dl?url=${encodeURIComponent(url)}`;
+        window.open(redirect, "_blank");
+      }, 3000); // delay for ad view
     }
   </script>
 
