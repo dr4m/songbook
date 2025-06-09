@@ -26,6 +26,19 @@
 },
 
   {
+  "title": "Anuvanuvu",
+    "actor": "sree vishnu",
+  "singer": "arjith singh",
+  "music": "sunny m. r.",
+  "movie": "om bheem bush",
+  "link": "../telugu/anuvanuvu.html",
+  "year": "2024",
+  "language": "Telugu",
+  "category": "Love",
+  "cover": "../pic/anuvanuvu.webp"
+},
+
+  {
   "title": "Raanjhan",
   "singer": "Sachet Parampara, Parampara Tandon",
   "music": "Sachet Parampara",
