@@ -50,7 +50,20 @@
   "category": "Love",
   "cover": "../pic/ammayi.webp"
 },
+
   
+  {
+     "title": "Nijame Ne",
+     "actor": "sandeep kishan",
+     "singer": "sid sriram",
+     "music": "shekhar chandra",
+    "movie": "ooru peru bhairavakona",
+    "link": "../telugu/nijamene.html",
+    "year": "2024",
+    "language": "Telugu",
+    "category": "Love",
+    "cover": "../pic/nijamene.webp"
+},
 
   {
   "title": "Raanjhan",
