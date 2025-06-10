@@ -36,7 +36,21 @@
   "language": "Telugu",
   "category": "Love",
   "cover": "../pic/anuvanuvu.webp"
+  },
+
+    {
+  "title": "Ammayi",
+    "actor": "ranbir kapoor",
+  "singer": "raghav chaitnya, pritam, jam8",
+  "music": "pritam",
+  "movie": "Animal",
+  "link": "../telugu/ammayi.html",
+  "year": "2024",
+  "language": "Telugu",
+  "category": "Love",
+  "cover": "../pic/ammayi.webp"
 },
+  
 
   {
   "title": "Raanjhan",
