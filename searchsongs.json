@@ -280,7 +280,17 @@
   },
 
   {
+    "title": "Let Her Go",
+    "singer": "passenger",
+    "language": "English",
+    "category": "FLOK",
+    "year": "2012",
+    "link": "../english/lethergo.html",
+    "cover": "../pic/lethergo.webp"
+  },
+  
 
+  {
     "name": "Charli XCX",
     "role": "Singer",
     "url": "../artists/charlixcx.html"
