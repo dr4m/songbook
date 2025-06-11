@@ -90,7 +90,7 @@
 <div id="trendingSongs" style="display:flex;flex-wrap:wrap;gap:15px;justify-content:center;"></div>
 
 <script>
-  fetch("../searchsongs.json")
+  fetch("/searchsongs.json")
     .then(res => res.json())
     .then(data => {
       const filtered = data.filter(song =>
