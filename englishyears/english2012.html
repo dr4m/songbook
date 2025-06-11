@@ -94,7 +94,7 @@
     .then(res => res.json())
     .then(data => {
       const filtered = data.filter(song =>
-        song.language?.toLowerCase().trim() === "English" &&
+        song.language?.toLowerCase().trim() === "english" &&
         song.year?.toString().trim() === "2012"
       );
 
