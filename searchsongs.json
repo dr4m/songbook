@@ -349,6 +349,19 @@
   "language": "Telugu",
   "category": "20s",
   "cover": "../pic/mellaga.jpg"
+  },
+
+  {
+  "title": "Prema Entha",
+  "actor": "karthik",
+  "singer": "spb",
+  "music": "Illaiyaraja",
+  "movie": "Varsham",
+  "link": "../telugu/premaenthakatinam.html",
+  "year": "1987",
+  "language": "Telugu",
+  "category": "90s",
+  "cover": "../pic/premaentha.webp"
   }
   
 ]
