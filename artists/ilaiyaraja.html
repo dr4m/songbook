@@ -71,11 +71,18 @@
   </div>
 </div>
 
+
 <script>
   fetch("../searchsongs.json")
     .then(res => res.json())
     .then(data => {
-      const filtered = data.filter(song => song.singer && song.singer.toLowerCase().includes("Illaiyaraja"));
+      // Match if 'DSP' is found in singer or music fields (case-insensitive)
+      const filtered = data.filter(song => {
+        const singer = song.singer?.toLowerCase() || "";
+        const music = song.music?.toLowerCase() || "";
+        return singer.includes("Illaiyaraja") || music.includes("Illaiyaraja");
+      });
+
       const container = document.getElementById("artistSongs");
 
       if (filtered.length === 0) {
@@ -85,13 +92,23 @@
           const div = document.createElement("div");
           div.style.width = "160px";
           div.style.textAlign = "center";
+
           div.innerHTML = `
-            <a href="${song.link}" style="text-decoration:none;color:#888;">
-              <img src="${song.cover}" alt="${song.title}" style="width:100%;border-radius:10px;">
-              <p style="margin-top:5px;font-weight:bold;">${song.title}</p>
-              <small>${song.movie}</small>
+            <a href="${song.link}" style="text-decoration: none; color: #333;">
+              <img src="${song.cover}" alt="${song.title}" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s;">
+              <p style="margin-top:8px; font-weight:bold; font-size: 15px;">${song.title}</p>
+              <small style="color: #666;">${song.movie}</small>
             </a>
           `;
+
+          // Add hover effect using JS
+          div.querySelector("img").addEventListener("mouseenter", () => {
+            div.querySelector("img").style.transform = "scale(1.05)";
+          });
+          div.querySelector("img").addEventListener("mouseleave", () => {
+            div.querySelector("img").style.transform = "scale(1)";
+          });
+
           container.appendChild(div);
         });
       }
