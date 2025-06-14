@@ -76,11 +76,11 @@
   fetch("../searchsongs.json")
     .then(res => res.json())
     .then(data => {
-      // Match if 'DSP' is found in singer or music fields (case-insensitive)
+      // Match if 'ilaiyaraja' is found in singer or music fields (case-insensitive)
       const filtered = data.filter(song => {
         const singer = song.singer?.toLowerCase() || "";
         const music = song.music?.toLowerCase() || "";
-        return singer.includes("Ilaiyaraja") || music.includes("Ilaiyaraja");
+        return singer.includes("ilaiyaraja") || music.includes("ilaiyaraja");
       });
 
       const container = document.getElementById("artistSongs");
