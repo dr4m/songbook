@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZXYSW3PSS"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-4ZXYSW3PSS');
+</script>
+
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9867180328516235"
+     crossorigin="anonymous"></script>
+
+  <meta charset="UTF-8" />
+  <title> Telugu 2019 Best Songs Collections | Telugu Hits Lyrics Collections </title>
+ <meta name="description" content="Listen and explore trending Telugu songs released in 2019. Full lyrics, artist info, and covers available.">
+ <meta name="keywords" content="2019 Telugu songs, trending Telugu songs, latest Telugu hits, Telugu lyrics 2019">
+  <meta name="author" content="Mr. Pollution">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+ <link rel="stylesheet" href="../sbstyles.css" />
+</head>
+   
+   <body>
+  
+     <header>
+       <div class="logo">
+          <a href="../index.html" style="text-decoration:none;"> 
+       <span class="white-txt">Song</span><span class="green-txt">Book</span></a>
+       </div>
+       <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+         <nav id="nav-menu">
+           <a href="../index.html">Home</a>
+           <a href="../trends/telugutrending.html">Trending</a>
+           <a href="../artists/artists.html">Artists</a>
+           <a href="../contact.html">Contact</a>
+           <a href="../aboutme.html">About us</a>
+           <a href="../privacy.html">Privacy & Policy</a>
+     </nav>
+     </header>
+     
+     
+     <!-- search box here -->
+     <div class="search-container">
+  <input type="text" id="searchInput" placeholder="Search songs or lyrics..." />
+  <div id="searchResults" class="search-results"></div>
+     </div>
+
+  <section class="hero">
+    <h1>Telugu Lyrics Hub</h1>
+    <p>Explore lyrics of your favorite Telugu songs!</p>
+  </section>
+
+<br>
+
+
+<h2 style="text-align:center;"> Telugu Tops Songs - 2019</h2>
+        <br>
+<div id="trendingSongs" style="display:flex;flex-wrap:wrap;gap:15px;justify-content:center;"></div>
+
+<script>
+  fetch("../searchsongs.json")
+    .then(res => res.json())
+    .then(data => {
+      const filtered = data.filter(song =>
+        song.language?.toLowerCase().trim() === "telugu" &&
+        song.year?.toString().trim() === "2019"
+      );
+
+      const container = document.getElementById("trendingSongs");
+
+      if (filtered.length === 0) {
+        container.innerHTML = "<p>No songs found.</p>";
+      } else {
+        filtered.forEach(song => {
+          const div = document.createElement("div");
+          div.style.width = "160px";
+          div.style.textAlign = "center";
+          div.innerHTML = `
+            <a href="${song.link}" style="text-decoration:none;color:#888;">
+              <img src="${song.cover}" alt="${song.title}" style="width:100%;border-radius:10px;">
+              <p style="margin-top:5px;font-weight:bold;">${song.title}</p>
+              <small>${song.movie}</small>
+            </a>
+          `;
+          container.appendChild(div);
+        });
+      }
+    });
+</script>
+
+ <!-- Back to Telugu Songs Button -->
+ <div style="text-align: center; margin: 40px 0;">
+ <a href="../index.html" class="back-button">Back to Home Page</a>
+ </div>
+ 
+ <br>
+
+
+
+<!-- Top Telugu Songs Dark Section -->
+  <!-- Top Telugu Songs Section -->
+  <section style="background-color: #111; color: #fff; padding: 20px 15px; border-radius: 12px; margin-top: 30px;">
+ <h2 style="font-size: 24px; margin-bottom: 15px; border-bottom: 2px solid #333; padding-bottom: 8px;">Top Telugu Songs</h2>
+ <ul style="list-style: none; padding-left: 0;">
+   <li style="margin: 10px ;"><a href="../telugu/telugu/asurahananam.html" style="color: #00ffe1; text-decoration: none;">Asura Hananam - Hari Hara Veera Mallu</a></li>
+   <li style="margin: 10px ;"><a href="../telugu/premalo.html" style="color: #00ffe1; text-decoration: none;">Premalo - Court</a></li>
+   <li style="margin: 10px ;"><a href="../telugu/Thanuhit3.html" style="color: #00ffe1; text-decoration: none;">Thanu - Hit 3</a></li>
+   <li style="margin: 10px ;"><a href="../telugu/hridayamlopala.html" style="color: #00ffe1; text-decoration: none;">Hridayam Lopala - kingdom</a></li>
+   <li style="margin: 10px ;"><a href="../telugu/chuttamalle.html" style="color: #00ffe1; text-decoration: none;">Chuttamalle - Devara Part 1 </a></li>
+ </ul>
+</section>
+
+<br>
+
+
+
+  <!-- Top Telugu Songs Section -->
+  <section style="background-color: #111; color: #fff; padding: 20px 15px; border-radius: 12px; margin-top: 30px;">
+  <h2 style="font-size: 24px; margin-bottom: 15px; border-bottom: 2px solid #333; padding-bottom: 8px;">Top Telugu 20s Songs</h2>
+  <ul style="list-style: none; padding-left: 0;">
+    <li style="margin: 10px 0;"><a href="../telugu/telugu/mellaga.html" style="color: #00ffe1; text-decoration: none;"> Mellaga Karagani - Varsham</a></li>
+    <li style="margin: 10px 0;"><a href="../telugu/nalone.html" style="color: #00ffe1; text-decoration: none;">Nalone Pogenu - Surya S/O Krishnan</a></li>
+  </ul>
+  </section>
+<br>
+
+<section id="artists" class="artist-section">
+ <h2>Top Artists</h2>
+ 
+ <br>
+ <div class="artist-scroll">
+ <div class="artist-card" onclick="location.href='../artists/anirudh.html'">
+ <img src="/pic/Anirudh.jpg" alt="Anirudh" />
+ <p>Anirudh</p>
+ </div>
+ 
+ 
+ <div class="artist-card" onclick="location.href='../artists/DSP.html'">
+ <img src="../pic/DSP.jpg" alt="Devi Sri Prasad" />
+ <p>Devi Sri Prasad</p>
+ </div>
+ 
+ <div class="artist-card" onclick="location.href='../artists/ilaiyaraja.html'">
+ <img src="/pic/iliayaraja.jpg" alt="iliayaraja" />
+ <p>Iliayaraaja</p>
+ </div>
+ 
+ <div class="artist-card" onclick="location.href='../artists/alluarjun.html'">
+ <img src="/pic/alluarjun.jpg" alt="Allu Arjun's profile photo" />
+ <p>Allu Arjun</p>
+</div>
+ <!-- Add more artist cards here -->
+ </div>
+ </section>
+ 
+ 
+ <!-- Social Media Section -->
+ <section class="social-media">
+ <h3>Follow Us</h3>
+ <div class="social-icons">
+ <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+ <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+ <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+ <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+ </div>
+ </section>
+ 
+ <br>
+      <!-- script for adsterra ad -->
+<script type="text/javascript">
+	atOptions = {
+		'key' : '185c1d83e49515a89b391a9a64ee76b6',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/185c1d83e49515a89b391a9a64ee76b6/invoke.js">
+</script>
+<br>
+ 
+ <footer>
+ <p>&copy; 2025 SongBook by Mr. Pollution.</p>
+ </footer>
+ 
+ <script src="../assets/js/navtoggle.js"></script>
+  <script src="../assets/js/search.js"></script>
+
+</body>
+</html>
