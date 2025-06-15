@@ -111,7 +111,7 @@
   fetch("../searchsongs.json")
     .then(res => res.json())
     .then(data => {
-      const filtered = data.filter(song => song.singer && song.singer.toLowerCase().includes("charliXCX"));
+      const filtered = data.filter(song => song.singer && song.singer.toLowerCase().includes("charlie xcx"));
       const container = document.getElementById("artistSongs");
 
       if (filtered.length === 0) {
@@ -134,6 +134,8 @@
     });
 </script>
 
+
+
  <!-- Back to Telugu Songs Button -->
  <div style="text-align: center; margin: 40px 0;">
  <a href="telugu.html" class="back-button">Back to Telugu Songs</a>
@@ -154,97 +156,29 @@
  </section>
  
  <br>
+
+     <!-- script for adsterra ad -->
+<script type="text/javascript">
+	atOptions = {
+		'key' : '185c1d83e49515a89b391a9a64ee76b6',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/185c1d83e49515a89b391a9a64ee76b6/invoke.js">
+</script>
  
  <footer>
  <p>&copy; 2025 SongBook by Mr. Pollution</p>
  </footer>
  
  
-<!-- script for updated search with artist-songs -->
-<script>
-  const searchInput = document.getElementById("searchInput");
-  const searchResults = document.getElementById("searchResults");
 
-  let songsData = [];
-
-  fetch("../searchsongs.json")
-    .then((res) => res.json())
-    .then((data) => {
-      songsData = data;
-    });
-
-  searchInput.addEventListener("input", () => {
-    const query = searchInput.value.toLowerCase();
-    searchResults.innerHTML = "";
-
-    if (query.trim() === "") {
-      searchResults.style.display = "none";
-      return;
-    }
-
-    const filtered = songsData.filter(item => {
-      return (
-        (item.title && item.title.toLowerCase().includes(query)) ||
-        (item.singer && item.singer.toLowerCase().includes(query)) ||
-        (item.movie && item.movie.toLowerCase().includes(query)) ||
-        (item.language && item.language.toLowerCase().includes(query)) ||
-        (item.actor && item.actor.toLowerCase().includes(query)) ||
-        (item.name && item.name.toLowerCase().includes(query)) // For artist entries if added later
-      );
-    });
-
-    if (filtered.length === 0) {
-      searchResults.innerHTML = "<div>No results found</div>";
-    } else {
-      filtered.slice(0, 10).forEach(item => {
-        const div = document.createElement("div");
-        div.style.padding = "5px 10px";
-        div.style.cursor = "pointer";
-
-        // Determine type (song vs artist/actor)
-        if (item.title) {
-          // It's a song
-          div.textContent = `${item.title} - ${item.singer || "Unknown Singer"}`;
-          div.onclick = () => window.location.href = item.link;
-        } else if (item.name) {
-          // It's a separate artist entry with name field
-          div.innerHTML = `<i class="fa-solid fa-user-astronaut" style="color: #0066cc; margin-right: 6px;"></i>${item.name} (${item.role || "Artist"})`;
-          div.onclick = () => window.location.href = item.url;
-        } else if (item.actor) {
-          // It's a match for actor name from song entry
-          div.innerHTML = `<i class="fa-solid fa-film" style="color: #0066cc; margin-right: 6px;"></i>${item.actor}`;
-          div.onclick = () => window.location.href = item.link;
-        }
-
-        searchResults.appendChild(div);
-      });
-    }
-
-    searchResults.style.display = "block";
-  });
-
-  document.addEventListener("click", function(event) {
-    if (!searchInput.contains(event.target) && !searchResults.contains(event.target)) {
-      searchResults.style.display = "none";
-    }
-  });
-</script>
-
-<!-- script for toggleMenu -->
-<script>
-function toggleMenu() {
- const menu = document.getElementById("nav-menu");
- menu.classList.toggle("show");
-}
-
-document.addEventListener("click", function(event) {
- const navMenu = document.getElementById("nav-menu");
- const toggleBtn = document.querySelector(".menu-toggle");
- if (!navMenu.contains(event.target) && !toggleBtn.contains(event.target)) {
-   navMenu.classList.remove("show");
- }
-});
-</script>
+  <script src="../assets/js/navtoggle.js"></script>
+  <script src="../assets/js/search.js"></script>
+     
  
  
 </body>
