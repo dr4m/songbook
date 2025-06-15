@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZXYSW3PSS"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4ZXYSW3PSS');
+</script>
+     
+     <link rel="canonical" href="https://hacker404.site/artists/nani.html" />
+  <title>Natural Star Nani - all songs Collections </title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  
+  <meta name="description" content="Natural Star Nani Songs Lyrics - Telugu, Tamil & Hindi songs list with lyrics, albums and movie info.">
+<meta name="keywords" content="Natural Star Nani songs, songs lyrics, Telugu hero nani songs, Tamil songs, all movie songs">
+
+<meta property="og:title" content="Natural star Nani - Song Lyrics & Albums">
+<meta property="og:description" content="Find all hit songs by Natural Star Nani  songs with lyrics and music details.">
+<meta property="og:image" content="https://hacker404.site/pic/nani.webp">
+<meta property="og:url" content="https://hacker404.site/artists/nani.html">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="../sbstyles.css" />
+
+</head>
+
+<body>
+
+  <header>
+       <div class="logo">
+          <a href="../index.html" style="text-decoration:none;"> 
+       <span class="white-txt">Song</span><span class="green-txt">Book</span></a>
+       </div>
+       <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+         <nav id="nav-menu">
+           <a href="../index.html">Home</a>
+           <a href="#">Trending</a>
+           <a href="../artists/artists.html">Artists</a>
+           <a href="../contact.html">Contact</a>
+           <a href="../aboutme.html">About Me</a>
+           <a href="../privacy.html">Privacy & Policy</a>
+     </nav>
+     </header>
+     
+<!-- search box here -->
+     <div class="search-container">
+  <input type="text" id="searchInput" placeholder="Search songs or lyrics..." />
+  <div id="searchResults" class="search-results"></div>
+     </div>
+     
+ <section class="hero">
+    <h1>Best Lyrics Hub</h1>
+    <br>
+    <p>Explore lyrics of your favorite songs!</p>
+  </section>
+  
+  <br>
+  
+  <div class="artist-profile">
+  <div class="artist-header" style="text-align:center; padding:20px;">
+    <img src="../pic/nani.webp" alt="Natural Star Nani artist profile pic" style="width:150px;height:150px;border-radius:50%;box-shadow:0 0 10px #ccc;"> 
+    
+    <br>
+  
+  
+  <section class="artist-hero">
+  <h1>Nani – Natural Star</h1>
+</section>
+
+<br>
+
+<aside class="artist-facts" style="line-height:1.3;">
+  <ul>
+    <li><strong>Full Name:</strong> Naveen Babu Ghanta</li>
+    <li><strong>Born:</strong> 24 February 1984, Hyderabad</li>
+    <li><strong>Debut Film:</strong> Ashta Chamma (2008)</li>
+    <li><strong>Occupations:</strong> Actor, Producer, TV Host</li>
+  </ul>
+</aside>
+
+<br>
+<section class="artist-bio">
+  <p>Nani began his career as a radio jockey and assistant director before
+     making a sensational acting debut…</p>
+</section>
+
+<section id="artistSongs" class="song-carousel"></section> <!-- JS fills this -->
+
+</div>
+
+
+<br>
+<br>
+  <div class="artist-songs">
+    <h3 style="text-align:center;">Songs of Nani</h3> <br>
+    <div id="artistSongs" style="display:flex;flex-wrap:wrap;gap:15px;justify-content:center;"></div>
+  </div>
+</div>
+
+<script>
+  fetch("../searchsongs.json")
+    .then(res => res.json())
+    .then(data => {
+      const filtered = data.filter(song => song.actor && song.actor.toLowerCase().includes("nani"));
+      const container = document.getElementById("artistSongs");
+
+      if (filtered.length === 0) {
+        container.innerHTML = "<p>No songs found.</p>";
+      } else {
+        filtered.forEach(song => {
+          const div = document.createElement("div");
+          div.style.width = "160px";
+          div.style.textAlign = "center";
+          div.innerHTML = `
+            <a href="${song.link}" style="text-decoration:none;color:#888;">
+              <img src="${song.cover}" alt="${song.title}" style="width:100%;border-radius:10px;">
+              <p style="margin-top:5px;font-weight:bold;">${song.title}</p>
+              <small>${song.movie}</small>
+            </a>
+          `;
+          container.appendChild(div);
+        });
+      }
+    });
+</script>
+
+ <!-- Back to Telugu Songs Button -->
+ <div style="text-align: center; margin: 40px 0;">
+ <a href="telugu.html" class="back-button">Back to Telugu Songs</a>
+ </div>
+ 
+ <br>
+
+
+ <!-- Social Media Section -->
+ <section class="social-media">
+ <h3>Follow Us</h3>
+ <div class="social-icons">
+ <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+ <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+ <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+ <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+ </div>
+ </section>
+ 
+ <br>
+ 
+ <!-- script for adsterra ad -->
+<script type="text/javascript">
+	atOptions = {
+		'key' : '185c1d83e49515a89b391a9a64ee76b6',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/185c1d83e49515a89b391a9a64ee76b6/invoke.js">
+</script>
+
+ <br>
+ 
+  <footer>
+ <p>&copy; 2025 SongBook by Mr. Pollution.</p>
+ </footer>
+  
+ <script src="../assets/js/navtoggle.js"></script>
+  <script src="../assets/js/search.js"></script>
+ 
+ 
+</body>
+</html>
