@@ -352,6 +352,19 @@
   },
 
   {
+  "title": "Hoyna Hoyna",
+    "actor": "nani",
+  "singer": "Anirudh Ravichander",
+  "music": "Anirudh Ravichander",
+  "movie": "gang leader",
+  "link": "../telugu/hoynahoyna.html",
+  "year": "2019",
+  "language": "Telugu",
+  "category": "Love",
+  "cover": "../pic/hoynahoyna.webp"
+},
+
+  {
   "title": "Prema Entha",
   "actor": "karthik",
   "singer": "spb",
