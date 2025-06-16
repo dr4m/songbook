@@ -154,6 +154,23 @@
   "cover": "../pic/peelings.webp"
   },
 
+  
+  {
+  "title": "Nee Jathaga Nenudali",
+  "actor": "Ram Charan",
+  "singer": "karthik, Shreya Ghoshal",
+  "music": "DSP",
+  "movie": "yevadu",
+  "link": "../telugu/neejathaga.html",
+  "year": "2013",
+  "language": "Telugu",
+  "category": "love",
+  "cover": "../pic/neejathaga.webp"
+  },
+
+
+
+
   {
   "title": "Hey Rangule",
   "actor": "Sivakarthikeyan",
