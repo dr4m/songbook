@@ -292,27 +292,23 @@ button:active {
     <p>&copy; 2025 SongBook by Mr. Pollution.</p>
   </footer>
 
-  
+  <!-- JS Files -->
+<script src="assets/js/navtoggle.js" defer></script>
+<script src="assets/js/search.js" defer></script>
+<script src="assets/js/20s.js" defer></script>
 
-  <script src="assets/js/navtoggle.js" defer></script>
-  <script src="assets/js/search.js" defer></script>
-  <script src="assets/js/20s.js"></script>
-
-  <!-- OneSignal SDK -->
+<!-- OneSignal SDK (Include only once) -->
 <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
 
 <!-- Custom Notification Script -->
-<!-- OneSignal SDK -->
-<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-
-<script>
+<script defer>
   window.OneSignalDeferred = window.OneSignalDeferred || [];
   OneSignalDeferred.push(async function(OneSignal) {
     await OneSignal.init({
       appId: "46235639-1bd7-4d21-8ed6-3ca9f8dcac52",
       safari_web_id: "web.onesignal.auto.1cd53ad7-1124-4d48-8712-0a155e6245f9",
       notifyButton: {
-        enable: false, // We use our own bell
+        enable: false, // Using custom bell
       },
     });
   });
@@ -321,16 +317,20 @@ button:active {
 
   function updateBellIcon() {
     const bell = document.getElementById('bellIcon');
-    bell.style.color = notificationsEnabled ? 'gold' : 'gray';
+    if (bell) {
+      bell.style.color = notificationsEnabled ? 'gold' : 'gray';
+    }
   }
 
   function showToast(message) {
     const toast = document.getElementById("toast");
-    toast.textContent = message;
-    toast.classList.add("show");
-    setTimeout(() => {
-      toast.classList.remove("show");
-    }, 3000);
+    if (toast) {
+      toast.textContent = message;
+      toast.classList.add("show");
+      setTimeout(() => {
+        toast.classList.remove("show");
+      }, 3000);
+    }
   }
 
   function toggleNotification() {
@@ -350,6 +350,6 @@ button:active {
 
   updateBellIcon();
 </script>
-
 </body>
-</html>   
+</html>
+
