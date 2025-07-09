@@ -224,6 +224,7 @@
   "cover": "../pic/bujjithalli.webp"
   },
 
+  
   {
     "title": "party 4 u",
     "movie": "charlie xcx",
@@ -233,6 +234,7 @@
     "link": "../english/party4u.html",
     "cover": "../pic/party4u.jpg"
   },
+  
 
   {
   "title": "Colorful chilaka",
@@ -312,6 +314,15 @@
     "cover": "../pic/die1.jpg"
   },
 
+  {
+    "title": "Ur So F**king Cool",
+    "singer": "tones and i",
+    "language": "English",
+    "category": "Pop",
+    "year": "2025"
+    "link": "../english/ursofucking.html",
+    "cover": "../pic/ursofucking.webp"
+  },
   
   {
     "title": "Bloody Mary",
