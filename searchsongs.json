@@ -13,6 +13,19 @@
 },
 
   {
+  "title": "Poyi Ra Mama",
+    "actor": "dhanush",
+  "singer": "dhanush",
+  "music": "DSP",
+  "movie": "kubera",
+  "link": "../telugu/poyiramama.html",
+  "year": "2025",
+  "language": "Telugu",
+  "category": "mass",
+  "cover": "../pic/poyiramama.webp"
+},
+
+  {
   "title": "Ullaasam",
     "actor": "nani",
   "singer": "Krishna Lasya Muthyala, Sanjith Hegde",
