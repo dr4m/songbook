@@ -334,6 +334,17 @@
     "cover": "../pic/blodymary.jpg"
   },
 
+  
+  {
+    "title": "LoveDrug",
+    "singer": "Lady Gaga",
+    "language": "English",
+    "category": "Pop",
+    "year": "2025",
+    "link": "../english/lovedrug.html",
+    "cover": "../pic/lovedrug.webp"
+  },
+
   {
     "title": "Let Her Go",
     "singer": "passenger",
